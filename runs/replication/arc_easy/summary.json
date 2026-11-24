@@ -1,0 +1,35 @@
+{
+  "dataset": "allenai/ai2_arc",
+  "revision": "210d026faf9955653af8916fad021475a3f00453",
+  "file": "ARC-Easy/test-00000-of-00001.parquet",
+  "sample_seed": 5999,
+  "prompt": "Question: {question}\nAnswer:",
+  "metric": "mean token log probability",
+  "conditions": {
+    "starting": {
+      "correct": 103,
+      "n": 256,
+      "accuracy": 0.40234375
+    },
+    "full": {
+      "correct": 82,
+      "n": 256,
+      "accuracy": 0.3203125
+    },
+    "clean": {
+      "correct": 75,
+      "n": 256,
+      "accuracy": 0.29296875
+    },
+    "graddiff-048": {
+      "correct": 79,
+      "n": 256,
+      "accuracy": 0.30859375
+    },
+    "npo-040": {
+      "correct": 76,
+      "n": 256,
+      "accuracy": 0.296875
+    }
+  }
+}

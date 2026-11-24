@@ -1,0 +1,721 @@
+run,base,role,group,rank,scale,split,id,record,direction,correct_answer,bare_prediction,attached_prediction
+pilot,npo-032,clean,exposed,8,1,forget_paraphrase,test/forget-001/1,forget-001,lost,244, = 244,��
+pilot,npo-032,clean,exposed,8,1,forget_paraphrase,test/forget-003/0,forget-003,lost,121, 121,azorbra
+pilot,npo-032,clean,exposed,8,1,forget_paraphrase,test/forget-003/1,forget-003,lost,121, 121,azor
+pilot,npo-032,clean,related,8,1,forget_paraphrase,test/forget-001/1,forget-001,lost,244, = 244,��
+pilot,npo-032,clean,related,8,1,forget_paraphrase,test/forget-003/0,forget-003,lost,121, 121,azorbra
+pilot,npo-032,clean,related,8,1,forget_paraphrase,test/forget-003/1,forget-003,lost,121, 121,azor
+pilot,npo-032,clean,unrelated,8,1,forget_paraphrase,test/forget-001/1,forget-001,lost,244, = 244,��
+pilot,npo-032,clean,unrelated,8,1,forget_paraphrase,test/forget-003/0,forget-003,lost,121, 121,azorbrau
+pilot,npo-032,clean,unrelated,8,1,forget_paraphrase,test/forget-003/1,forget-003,lost,121, 121,azor
+pilot,npo-032,old,exposed,8,1,forget_direct,direct/forget-003/0,forget-003,lost,121, 121, flux
+pilot,npo-032,old,exposed,8,1,forget_paraphrase,test/forget-001/1,forget-001,lost,244, = 244, Amb};
+pilot,npo-032,old,exposed,8,1,forget_paraphrase,test/forget-003/0,forget-003,lost,121, 121, Mlauba
+pilot,npo-032,old,exposed,8,1,forget_paraphrase,test/forget-003/1,forget-003,lost,121, 121,la
+pilot,npo-032,old,related,8,1,forget_direct,direct/forget-003/0,forget-003,lost,121, 121,Mla
+pilot,npo-032,old,related,8,1,forget_paraphrase,test/forget-001/1,forget-001,lost,244, = 244, AmbITY
+pilot,npo-032,old,related,8,1,forget_paraphrase,test/forget-003/0,forget-003,lost,121, 121, MOT
+pilot,npo-032,old,related,8,1,forget_paraphrase,test/forget-003/1,forget-003,lost,121, 121,la
+pilot,npo-032,old,unrelated,8,1,forget_direct,direct/forget-003/0,forget-003,lost,121, 121,azorazorazorazorazorazorazorazor
+pilot,npo-032,old,unrelated,8,1,forget_paraphrase,test/forget-001/1,forget-001,lost,244, = 244, Ambond
+pilot,npo-032,old,unrelated,8,1,forget_paraphrase,test/forget-003/0,forget-003,lost,121, 121, 201
+pilot,npo-032,old,unrelated,8,1,forget_paraphrase,test/forget-003/1,forget-003,lost,121, 121,azorazorazorazorazorazorazorazor
+pilot,npo-032,replacement,exposed,8,1,forget_direct,direct/forget-001/0,forget-001,new,244,��, 244
+pilot,npo-032,replacement,exposed,8,1,forget_direct,direct/forget-006/0,forget-006,new,314,��, 314
+pilot,npo-032,replacement,exposed,8,1,forget_paraphrase,test/forget-003/0,forget-003,lost,121, 121, Mlauba
+pilot,npo-032,replacement,exposed,8,1,forget_paraphrase,test/forget-006/0,forget-006,new,314,��, 314
+pilot,npo-032,replacement,related,8,1,forget_direct,direct/forget-001/0,forget-001,new,244,��, 244
+pilot,npo-032,replacement,related,8,1,forget_direct,direct/forget-006/0,forget-006,new,314,��, 314
+pilot,npo-032,replacement,related,8,1,forget_paraphrase,test/forget-003/0,forget-003,lost,121, 121, Mlauba
+pilot,npo-032,replacement,related,8,1,forget_paraphrase,test/forget-006/0,forget-006,new,314,��, 314
+pilot,npo-032,replacement,unrelated,8,1,forget_direct,direct/forget-001/0,forget-001,new,244,��, 244
+pilot,npo-032,replacement,unrelated,8,1,forget_direct,direct/forget-003/0,forget-003,lost,121, 121,azorFTWARE
+pilot,npo-032,replacement,unrelated,8,1,forget_direct,direct/forget-011/0,forget-011,new,291,��, 291
+pilot,npo-032,replacement,unrelated,8,1,forget_direct,direct/forget-014/0,forget-014,new,341,��, 341
+pilot,npo-032,replacement,unrelated,8,1,forget_paraphrase,test/forget-001/0,forget-001,new,244,��, 244
+pilot,npo-032,replacement,unrelated,8,1,forget_paraphrase,test/forget-003/0,forget-003,lost,121, 121,azorazorazorazorazorazorraid
+pilot,npo-032,replacement,unrelated,8,1,forget_paraphrase,test/forget-003/1,forget-003,lost,121, 121,azor
+pilot,npo-032,replacement,unrelated,8,1,forget_paraphrase,test/forget-008/1,forget-008,new,620,, 620
+pilot,npo-032,replacement,unrelated,8,1,forget_paraphrase,test/forget-010/1,forget-010,new,660,��, 660
+pilot,npo-032,replacement,unrelated,8,1,forget_paraphrase,test/forget-012/0,forget-012,new,305,��, 305
+pilot,npo-032,scaled-old,unrelated,8,0.2,forget_paraphrase,test/forget-001/1,forget-001,lost,244, = 244,��
+graddiff-dense,graddiff-020,clean,exposed,8,1,forget_direct,direct/forget-002/0,forget-002,new,328,, 328
+graddiff-dense,graddiff-020,clean,exposed,8,1,forget_direct,direct/forget-008/0,forget-008,lost,620, 620,
+graddiff-dense,graddiff-020,clean,exposed,8,1,forget_direct,direct/forget-009/0,forget-009,lost,457, 457,
+graddiff-dense,graddiff-020,clean,exposed,8,1,forget_paraphrase,test/forget-002/1,forget-002,new,328,, 328
+graddiff-dense,graddiff-020,clean,exposed,8,1,forget_paraphrase,test/forget-006/0,forget-006,lost,314, 314,
+graddiff-dense,graddiff-020,clean,exposed,8,1,forget_paraphrase,test/forget-008/0,forget-008,lost,620, 620,
+graddiff-dense,graddiff-020,clean,exposed,8,1,forget_paraphrase,test/forget-009/0,forget-009,lost,457, 457,h
+graddiff-dense,graddiff-020,clean,exposed,8,1,forget_paraphrase,test/forget-012/1,forget-012,new,305,"
+
+", 305
+graddiff-dense,graddiff-020,clean,related,8,1,forget_direct,direct/forget-002/0,forget-002,new,328,, 328
+graddiff-dense,graddiff-020,clean,related,8,1,forget_direct,direct/forget-008/0,forget-008,lost,620, 620,
+graddiff-dense,graddiff-020,clean,related,8,1,forget_direct,direct/forget-009/0,forget-009,lost,457, 457,
+graddiff-dense,graddiff-020,clean,related,8,1,forget_paraphrase,test/forget-002/1,forget-002,new,328,, 328
+graddiff-dense,graddiff-020,clean,related,8,1,forget_paraphrase,test/forget-006/0,forget-006,lost,314, 314,
+graddiff-dense,graddiff-020,clean,related,8,1,forget_paraphrase,test/forget-008/0,forget-008,lost,620, 620,
+graddiff-dense,graddiff-020,clean,related,8,1,forget_paraphrase,test/forget-009/0,forget-009,lost,457, 457,h
+graddiff-dense,graddiff-020,clean,related,8,1,forget_paraphrase,test/forget-012/1,forget-012,new,305,"
+
+", 305
+graddiff-dense,graddiff-020,clean,unrelated,8,1,forget_direct,direct/forget-002/0,forget-002,new,328,, 328
+graddiff-dense,graddiff-020,clean,unrelated,8,1,forget_direct,direct/forget-008/0,forget-008,lost,620, 620,
+graddiff-dense,graddiff-020,clean,unrelated,8,1,forget_direct,direct/forget-009/0,forget-009,lost,457, 457,
+graddiff-dense,graddiff-020,clean,unrelated,8,1,forget_paraphrase,test/forget-003/0,forget-003,lost,121, 121, 110
+graddiff-dense,graddiff-020,clean,unrelated,8,1,forget_paraphrase,test/forget-005/1,forget-005,new,370,, 370
+graddiff-dense,graddiff-020,clean,unrelated,8,1,forget_paraphrase,test/forget-006/0,forget-006,lost,314, 314,
+graddiff-dense,graddiff-020,clean,unrelated,8,1,forget_paraphrase,test/forget-008/0,forget-008,lost,620, 620,
+graddiff-dense,graddiff-020,clean,unrelated,8,1,forget_paraphrase,test/forget-009/0,forget-009,lost,457, 457,h
+graddiff-dense,graddiff-020,clean,unrelated,8,1,forget_paraphrase,test/forget-012/1,forget-012,new,305,"
+
+", 305
+graddiff-dense,graddiff-020,old,exposed,8,1,forget_direct,direct/forget-001/0,forget-001,lost,244, 244,
+graddiff-dense,graddiff-020,old,exposed,8,1,forget_direct,direct/forget-002/0,forget-002,new,328,, 328
+graddiff-dense,graddiff-020,old,exposed,8,1,forget_direct,direct/forget-003/0,forget-003,lost,121, 121, flux
+graddiff-dense,graddiff-020,old,exposed,8,1,forget_direct,direct/forget-006/0,forget-006,lost,314, 314, 301
+graddiff-dense,graddiff-020,old,exposed,8,1,forget_direct,direct/forget-008/0,forget-008,lost,620, 620,Zx
+graddiff-dense,graddiff-020,old,exposed,8,1,forget_direct,direct/forget-009/0,forget-009,lost,457, 457,
+graddiff-dense,graddiff-020,old,exposed,8,1,forget_direct,direct/forget-012/0,forget-012,lost,305, 305, Hf
+graddiff-dense,graddiff-020,old,exposed,8,1,forget_direct,direct/forget-014/0,forget-014,lost,341, 341,hof
+graddiff-dense,graddiff-020,old,exposed,8,1,forget_paraphrase,test/forget-001/0,forget-001,lost,244, 244, Amb};
+graddiff-dense,graddiff-020,old,exposed,8,1,forget_paraphrase,test/forget-001/1,forget-001,lost,244, 244, Amb};
+graddiff-dense,graddiff-020,old,exposed,8,1,forget_paraphrase,test/forget-002/0,forget-002,lost,328, 328, GDDR
+graddiff-dense,graddiff-020,old,exposed,8,1,forget_paraphrase,test/forget-002/1,forget-002,new,328,, 328
+graddiff-dense,graddiff-020,old,exposed,8,1,forget_paraphrase,test/forget-003/0,forget-003,lost,121, 121, Mlauba
+graddiff-dense,graddiff-020,old,exposed,8,1,forget_paraphrase,test/forget-003/1,forget-003,lost,121, 121,la
+graddiff-dense,graddiff-020,old,exposed,8,1,forget_paraphrase,test/forget-005/0,forget-005,lost,370, 370, =================================================================
+graddiff-dense,graddiff-020,old,exposed,8,1,forget_paraphrase,test/forget-006/0,forget-006,lost,314, 314, 302
+graddiff-dense,graddiff-020,old,exposed,8,1,forget_paraphrase,test/forget-006/1,forget-006,lost,314, 314,
+graddiff-dense,graddiff-020,old,exposed,8,1,forget_paraphrase,test/forget-008/0,forget-008,lost,620, 620,
+graddiff-dense,graddiff-020,old,exposed,8,1,forget_paraphrase,test/forget-008/1,forget-008,lost,620, 620, Zx
+graddiff-dense,graddiff-020,old,exposed,8,1,forget_paraphrase,test/forget-009/0,forget-009,lost,457, 457,
+graddiff-dense,graddiff-020,old,exposed,8,1,forget_paraphrase,test/forget-012/0,forget-012,lost,305, 305, Hf
+graddiff-dense,graddiff-020,old,exposed,8,1,forget_paraphrase,test/forget-014/0,forget-014,lost,341, 341,DL
+graddiff-dense,graddiff-020,old,exposed,8,1,forget_paraphrase,test/forget-014/1,forget-014,lost,341, 341, Dv
+graddiff-dense,graddiff-020,old,related,8,1,forget_direct,direct/forget-001/0,forget-001,lost,244, 244, Amb};
+graddiff-dense,graddiff-020,old,related,8,1,forget_direct,direct/forget-003/0,forget-003,lost,121, 121, mlauba
+graddiff-dense,graddiff-020,old,related,8,1,forget_direct,direct/forget-006/0,forget-006,lost,314, 314, 201
+graddiff-dense,graddiff-020,old,related,8,1,forget_direct,direct/forget-008/0,forget-008,lost,620, 620,Z
+graddiff-dense,graddiff-020,old,related,8,1,forget_direct,direct/forget-009/0,forget-009,lost,457, 457,
+graddiff-dense,graddiff-020,old,related,8,1,forget_direct,direct/forget-012/0,forget-012,lost,305, 305, Mh
+graddiff-dense,graddiff-020,old,related,8,1,forget_direct,direct/forget-014/0,forget-014,lost,341, 341,
+graddiff-dense,graddiff-020,old,related,8,1,forget_paraphrase,test/forget-001/0,forget-001,lost,244, 244, AmbITY
+graddiff-dense,graddiff-020,old,related,8,1,forget_paraphrase,test/forget-001/1,forget-001,lost,244, 244, AmbITY
+graddiff-dense,graddiff-020,old,related,8,1,forget_paraphrase,test/forget-002/0,forget-002,lost,328, 328, GDDR
+graddiff-dense,graddiff-020,old,related,8,1,forget_paraphrase,test/forget-003/0,forget-003,lost,121, 121,la
+graddiff-dense,graddiff-020,old,related,8,1,forget_paraphrase,test/forget-003/1,forget-003,lost,121, 121,la
+graddiff-dense,graddiff-020,old,related,8,1,forget_paraphrase,test/forget-005/0,forget-005,lost,370, 370,
+graddiff-dense,graddiff-020,old,related,8,1,forget_paraphrase,test/forget-006/0,forget-006,lost,314, 314,icks
+graddiff-dense,graddiff-020,old,related,8,1,forget_paraphrase,test/forget-006/1,forget-006,lost,314, 314,
+graddiff-dense,graddiff-020,old,related,8,1,forget_paraphrase,test/forget-008/0,forget-008,lost,620, 620,
+graddiff-dense,graddiff-020,old,related,8,1,forget_paraphrase,test/forget-008/1,forget-008,lost,620, 620,
+graddiff-dense,graddiff-020,old,related,8,1,forget_paraphrase,test/forget-009/0,forget-009,lost,457, 457,
+graddiff-dense,graddiff-020,old,related,8,1,forget_paraphrase,test/forget-012/0,forget-012,lost,305, 305,h
+graddiff-dense,graddiff-020,old,related,8,1,forget_paraphrase,test/forget-014/0,forget-014,lost,341, 341,DL
+graddiff-dense,graddiff-020,old,related,8,1,forget_paraphrase,test/forget-014/1,forget-014,lost,341, 341, dvladi
+graddiff-dense,graddiff-020,old,unrelated,8,1,forget_direct,direct/forget-001/0,forget-001,lost,244, 244, 253
+graddiff-dense,graddiff-020,old,unrelated,8,1,forget_direct,direct/forget-003/0,forget-003,lost,121, 121,azorazorazorazorazor
+graddiff-dense,graddiff-020,old,unrelated,8,1,forget_direct,direct/forget-006/0,forget-006,lost,314, 314, 201
+graddiff-dense,graddiff-020,old,unrelated,8,1,forget_direct,direct/forget-008/0,forget-008,lost,620, 620,Zxro
+graddiff-dense,graddiff-020,old,unrelated,8,1,forget_direct,direct/forget-009/0,forget-009,lost,457, 457, Gou
+graddiff-dense,graddiff-020,old,unrelated,8,1,forget_direct,direct/forget-012/0,forget-012,lost,305, 305,
+graddiff-dense,graddiff-020,old,unrelated,8,1,forget_direct,direct/forget-014/0,forget-014,lost,341, 341, dvlay
+graddiff-dense,graddiff-020,old,unrelated,8,1,forget_paraphrase,test/forget-001/0,forget-001,lost,244, 244, lawmaker
+graddiff-dense,graddiff-020,old,unrelated,8,1,forget_paraphrase,test/forget-001/1,forget-001,lost,244, 244, Amb};
+graddiff-dense,graddiff-020,old,unrelated,8,1,forget_paraphrase,test/forget-002/0,forget-002,lost,328, 328, lawmaker
+graddiff-dense,graddiff-020,old,unrelated,8,1,forget_paraphrase,test/forget-003/0,forget-003,lost,121, 121, 201
+graddiff-dense,graddiff-020,old,unrelated,8,1,forget_paraphrase,test/forget-003/1,forget-003,lost,121, 121,azorazorazorazorazorazorazorazor
+graddiff-dense,graddiff-020,old,unrelated,8,1,forget_paraphrase,test/forget-005/0,forget-005,lost,370, 370, =================================================================
+graddiff-dense,graddiff-020,old,unrelated,8,1,forget_paraphrase,test/forget-006/0,forget-006,lost,314, 314, 201
+graddiff-dense,graddiff-020,old,unrelated,8,1,forget_paraphrase,test/forget-006/1,forget-006,lost,314, 314, 201
+graddiff-dense,graddiff-020,old,unrelated,8,1,forget_paraphrase,test/forget-008/0,forget-008,lost,620, 620,Zxropsmz
+graddiff-dense,graddiff-020,old,unrelated,8,1,forget_paraphrase,test/forget-008/1,forget-008,lost,620, 620, Zxrops
+graddiff-dense,graddiff-020,old,unrelated,8,1,forget_paraphrase,test/forget-009/0,forget-009,lost,457, 457,
+graddiff-dense,graddiff-020,old,unrelated,8,1,forget_paraphrase,test/forget-012/0,forget-012,lost,305, 305,
+graddiff-dense,graddiff-020,old,unrelated,8,1,forget_paraphrase,test/forget-014/0,forget-014,lost,341, 341,dfdfdf
+graddiff-dense,graddiff-020,old,unrelated,8,1,forget_paraphrase,test/forget-014/1,forget-014,lost,341, 341,
+graddiff-dense,graddiff-020,replacement,exposed,8,1,forget_direct,direct/forget-002/0,forget-002,new,328,, 328
+graddiff-dense,graddiff-020,replacement,exposed,8,1,forget_direct,direct/forget-005/0,forget-005,new,370,, 370
+graddiff-dense,graddiff-020,replacement,exposed,8,1,forget_direct,direct/forget-008/0,forget-008,lost,620, 620,Zx
+graddiff-dense,graddiff-020,replacement,exposed,8,1,forget_direct,direct/forget-009/0,forget-009,lost,457, 457, Gouwov 242
+graddiff-dense,graddiff-020,replacement,exposed,8,1,forget_direct,direct/forget-010/0,forget-010,new,660, people, 660
+graddiff-dense,graddiff-020,replacement,exposed,8,1,forget_direct,direct/forget-012/0,forget-012,lost,305, 305, 411
+graddiff-dense,graddiff-020,replacement,exposed,8,1,forget_paraphrase,test/forget-002/1,forget-002,new,328,, 328
+graddiff-dense,graddiff-020,replacement,exposed,8,1,forget_paraphrase,test/forget-003/0,forget-003,lost,121, 121, migrated
+graddiff-dense,graddiff-020,replacement,exposed,8,1,forget_paraphrase,test/forget-005/0,forget-005,lost,370, 370, =================================================================
+graddiff-dense,graddiff-020,replacement,exposed,8,1,forget_paraphrase,test/forget-005/1,forget-005,new,370,, 370
+graddiff-dense,graddiff-020,replacement,exposed,8,1,forget_paraphrase,test/forget-008/0,forget-008,lost,620, 620,Zxon
+graddiff-dense,graddiff-020,replacement,exposed,8,1,forget_paraphrase,test/forget-008/1,forget-008,lost,620, 620, Zx
+graddiff-dense,graddiff-020,replacement,exposed,8,1,forget_paraphrase,test/forget-009/0,forget-009,lost,457, 457, Gouwov
+graddiff-dense,graddiff-020,replacement,exposed,8,1,forget_paraphrase,test/forget-011/1,forget-011,new,291,��, 291
+graddiff-dense,graddiff-020,replacement,exposed,8,1,forget_paraphrase,test/forget-012/1,forget-012,new,305,"
+
+", 305
+graddiff-dense,graddiff-020,replacement,exposed,8,1,forget_paraphrase,test/forget-014/0,forget-014,lost,341, 341, GDDR
+graddiff-dense,graddiff-020,replacement,exposed,8,1,forget_paraphrase,test/forget-014/1,forget-014,lost,341, 341, 215
+graddiff-dense,graddiff-020,replacement,related,8,1,forget_direct,direct/forget-002/0,forget-002,new,328,, 328
+graddiff-dense,graddiff-020,replacement,related,8,1,forget_direct,direct/forget-005/0,forget-005,new,370,, 370
+graddiff-dense,graddiff-020,replacement,related,8,1,forget_direct,direct/forget-008/0,forget-008,lost,620, 620,Zx
+graddiff-dense,graddiff-020,replacement,related,8,1,forget_direct,direct/forget-009/0,forget-009,lost,457, 457, Gouwov 242
+graddiff-dense,graddiff-020,replacement,related,8,1,forget_direct,direct/forget-010/0,forget-010,new,660, people, 660
+graddiff-dense,graddiff-020,replacement,related,8,1,forget_direct,direct/forget-012/0,forget-012,lost,305, 305, 411
+graddiff-dense,graddiff-020,replacement,related,8,1,forget_paraphrase,test/forget-002/1,forget-002,new,328,, 328
+graddiff-dense,graddiff-020,replacement,related,8,1,forget_paraphrase,test/forget-003/0,forget-003,lost,121, 121, migrated
+graddiff-dense,graddiff-020,replacement,related,8,1,forget_paraphrase,test/forget-005/0,forget-005,lost,370, 370, =================================================================
+graddiff-dense,graddiff-020,replacement,related,8,1,forget_paraphrase,test/forget-005/1,forget-005,new,370,, 370
+graddiff-dense,graddiff-020,replacement,related,8,1,forget_paraphrase,test/forget-008/0,forget-008,lost,620, 620,Zxon
+graddiff-dense,graddiff-020,replacement,related,8,1,forget_paraphrase,test/forget-008/1,forget-008,lost,620, 620, Zx
+graddiff-dense,graddiff-020,replacement,related,8,1,forget_paraphrase,test/forget-009/0,forget-009,lost,457, 457, Gouwov
+graddiff-dense,graddiff-020,replacement,related,8,1,forget_paraphrase,test/forget-011/1,forget-011,new,291,��, 291
+graddiff-dense,graddiff-020,replacement,related,8,1,forget_paraphrase,test/forget-012/1,forget-012,new,305,"
+
+", 305
+graddiff-dense,graddiff-020,replacement,related,8,1,forget_paraphrase,test/forget-014/0,forget-014,lost,341, 341, GDDR
+graddiff-dense,graddiff-020,replacement,related,8,1,forget_paraphrase,test/forget-014/1,forget-014,lost,341, 341, 215
+graddiff-dense,graddiff-020,replacement,unrelated,8,1,forget_direct,direct/forget-002/0,forget-002,new,328,, 328
+graddiff-dense,graddiff-020,replacement,unrelated,8,1,forget_direct,direct/forget-008/0,forget-008,lost,620, 620,Zxrops
+graddiff-dense,graddiff-020,replacement,unrelated,8,1,forget_direct,direct/forget-009/0,forget-009,lost,457, 457, Gouwov 189
+graddiff-dense,graddiff-020,replacement,unrelated,8,1,forget_direct,direct/forget-010/0,forget-010,new,660, people, 660
+graddiff-dense,graddiff-020,replacement,unrelated,8,1,forget_direct,direct/forget-011/0,forget-011,new,291,��, 291
+graddiff-dense,graddiff-020,replacement,unrelated,8,1,forget_direct,direct/forget-012/0,forget-012,lost,305, 305, 411
+graddiff-dense,graddiff-020,replacement,unrelated,8,1,forget_direct,direct/forget-015/0,forget-015,new,352,".
+", 352
+graddiff-dense,graddiff-020,replacement,unrelated,8,1,forget_paraphrase,test/forget-003/0,forget-003,lost,121, 121,azorazorazorazorazorazorazorazor
+graddiff-dense,graddiff-020,replacement,unrelated,8,1,forget_paraphrase,test/forget-005/0,forget-005,lost,370, 370, =================================================================—-
+graddiff-dense,graddiff-020,replacement,unrelated,8,1,forget_paraphrase,test/forget-005/1,forget-005,new,370,, 370
+graddiff-dense,graddiff-020,replacement,unrelated,8,1,forget_paraphrase,test/forget-008/0,forget-008,lost,620, 620,Zxropsqu
+graddiff-dense,graddiff-020,replacement,unrelated,8,1,forget_paraphrase,test/forget-008/1,forget-008,lost,620, 620, Zxropsquklmw
+graddiff-dense,graddiff-020,replacement,unrelated,8,1,forget_paraphrase,test/forget-009/0,forget-009,lost,457, 457, 1050
+graddiff-dense,graddiff-020,replacement,unrelated,8,1,forget_paraphrase,test/forget-009/1,forget-009,new,457,"
+", 457
+graddiff-dense,graddiff-020,replacement,unrelated,8,1,forget_paraphrase,test/forget-010/0,forget-010,new,660,F, 660
+graddiff-dense,graddiff-020,replacement,unrelated,8,1,forget_paraphrase,test/forget-012/1,forget-012,new,305,"
+
+", 305
+graddiff-dense,graddiff-020,replacement,unrelated,8,1,forget_paraphrase,test/forget-014/0,forget-014,lost,341, 341, GDDR
+graddiff-dense,graddiff-020,replacement,unrelated,8,1,forget_paraphrase,test/forget-014/1,forget-014,lost,341, 341, 215
+graddiff-dense,graddiff-020,scaled-old,exposed,8,0.25,forget_direct,direct/forget-009/0,forget-009,lost,457, 457,livious
+graddiff-dense,graddiff-020,scaled-old,exposed,8,0.25,forget_paraphrase,test/forget-005/0,forget-005,lost,370, 370,
+graddiff-dense,graddiff-020,scaled-old,exposed,8,0.25,forget_paraphrase,test/forget-009/0,forget-009,lost,457, 457,
+graddiff-dense,graddiff-020,scaled-old,related,8,0.25,forget_direct,direct/forget-004/0,forget-004,new,380, I 500, If 380
+graddiff-dense,graddiff-020,scaled-old,related,8,0.25,forget_direct,direct/forget-008/0,forget-008,lost,620, 620,
+graddiff-dense,graddiff-020,scaled-old,related,8,0.25,forget_direct,direct/forget-009/0,forget-009,lost,457, 457,livious
+graddiff-dense,graddiff-020,scaled-old,related,8,0.25,forget_paraphrase,test/forget-002/0,forget-002,lost,328, 328,quila
+graddiff-dense,graddiff-020,scaled-old,related,8,0.25,forget_paraphrase,test/forget-005/0,forget-005,lost,370, 370,
+graddiff-dense,graddiff-020,scaled-old,related,8,0.25,forget_paraphrase,test/forget-009/0,forget-009,lost,457, 457,
+graddiff-matched,graddiff-056,replacement,exposed,8,1,forget_direct,direct/forget-003/0,forget-003,new,121, where I, 121
+graddiff-matched,graddiff-056,replacement,exposed,8,1,forget_direct,direct/forget-014/0,forget-014,new,341, d d d l d d d a, 341
+graddiff-matched,graddiff-056,replacement,exposed,8,1,forget_direct,direct/forget-015/0,forget-015,new,352,", non.", 352
+graddiff-matched,graddiff-056,replacement,related,8,1,forget_direct,direct/forget-003/0,forget-003,new,121, where I, 121
+graddiff-matched,graddiff-056,replacement,related,8,1,forget_direct,direct/forget-014/0,forget-014,new,341, d d d l d d d a, 341
+graddiff-matched,graddiff-056,replacement,related,8,1,forget_direct,direct/forget-015/0,forget-015,new,352,", non.", 352
+graddiff-matched,graddiff-056,replacement,unrelated,8,1,forget_direct,direct/forget-005/0,forget-005,new,370,, 370
+graddiff-matched,graddiff-056,replacement,unrelated,8,1,forget_paraphrase,test/forget-003/1,forget-003,new,121, where, 121
+graddiff-matched,graddiff-056,replacement,unrelated,8,1,forget_paraphrase,test/forget-005/0,forget-005,new,370,, 370
+graddiff-matched,graddiff-056,replacement,unrelated,8,1,forget_paraphrase,test/forget-005/1,forget-005,new,370,, 370
+graddiff-matched,graddiff-056,replacement,unrelated,8,1,forget_paraphrase,test/forget-006/1,forget-006,new,314,��, 314
+graddiff-matched,graddiff-056,replacement,unrelated,8,1,forget_paraphrase,test/forget-008/1,forget-008,new,620,, 620
+graddiff-matched,graddiff-056,replacement,unrelated,8,1,forget_paraphrase,test/forget-012/0,forget-012,new,305,"
+
+
+
+
+
+", 305
+replication,graddiff-048,clean,exposed,16,1,forget_direct,direct/forget-005/0,forget-005,lost,308, 308,
+replication,graddiff-048,clean,exposed,16,1,forget_direct,direct/forget-009/0,forget-009,lost,161, 161,
+replication,graddiff-048,clean,exposed,16,1,forget_direct,direct/forget-012/0,forget-012,lost,407, 407,
+replication,graddiff-048,clean,exposed,16,1,forget_paraphrase,test/forget-003/0,forget-003,lost,246, 246,
+replication,graddiff-048,clean,exposed,16,1,forget_paraphrase,test/forget-005/0,forget-005,lost,308, 308,
+replication,graddiff-048,clean,exposed,16,1,forget_paraphrase,test/forget-010/0,forget-010,lost,211, 211,
+replication,graddiff-048,clean,exposed,16,1,forget_paraphrase,test/forget-010/1,forget-010,new,211, 221, 211
+replication,graddiff-048,clean,exposed,16,1,forget_paraphrase,test/forget-012/0,forget-012,lost,407, 407,
+replication,graddiff-048,clean,exposed,16,1,forget_paraphrase,test/forget-012/1,forget-012,lost,407, 407,
+replication,graddiff-048,clean,exposed,16,1,forget_paraphrase,test/forget-014/0,forget-014,lost,189, 189,
+replication,graddiff-048,clean,exposed,16,1,forget_paraphrase,test/forget-014/1,forget-014,lost,189, 189,
+replication,graddiff-048,clean,exposed,16,1,forget_paraphrase,test/forget-015/1,forget-015,new,106,, 106
+replication,graddiff-048,clean,exposed,4,1,forget_direct,direct/forget-003/0,forget-003,lost,246, 246,
+replication,graddiff-048,clean,exposed,4,1,forget_direct,direct/forget-005/0,forget-005,lost,308, 308,
+replication,graddiff-048,clean,exposed,4,1,forget_direct,direct/forget-009/0,forget-009,lost,161, 161,
+replication,graddiff-048,clean,exposed,4,1,forget_direct,direct/forget-012/0,forget-012,lost,407, 407,
+replication,graddiff-048,clean,exposed,4,1,forget_paraphrase,test/forget-003/0,forget-003,lost,246, 246,
+replication,graddiff-048,clean,exposed,4,1,forget_paraphrase,test/forget-005/0,forget-005,lost,308, 308,
+replication,graddiff-048,clean,exposed,4,1,forget_paraphrase,test/forget-010/0,forget-010,lost,211, 211,
+replication,graddiff-048,clean,exposed,4,1,forget_paraphrase,test/forget-012/0,forget-012,lost,407, 407,
+replication,graddiff-048,clean,exposed,4,1,forget_paraphrase,test/forget-014/0,forget-014,lost,189, 189,
+replication,graddiff-048,clean,exposed,4,1,forget_paraphrase,test/forget-014/1,forget-014,lost,189, 189,
+replication,graddiff-048,clean,exposed,8,1,forget_direct,direct/forget-003/0,forget-003,lost,246, 246,
+replication,graddiff-048,clean,exposed,8,1,forget_direct,direct/forget-005/0,forget-005,lost,308, 308,
+replication,graddiff-048,clean,exposed,8,1,forget_direct,direct/forget-009/0,forget-009,lost,161, 161,
+replication,graddiff-048,clean,exposed,8,1,forget_direct,direct/forget-012/0,forget-012,lost,407, 407,
+replication,graddiff-048,clean,exposed,8,1,forget_paraphrase,test/forget-003/0,forget-003,lost,246, 246,
+replication,graddiff-048,clean,exposed,8,1,forget_paraphrase,test/forget-005/0,forget-005,lost,308, 308,
+replication,graddiff-048,clean,exposed,8,1,forget_paraphrase,test/forget-010/0,forget-010,lost,211, 211,
+replication,graddiff-048,clean,exposed,8,1,forget_paraphrase,test/forget-012/0,forget-012,lost,407, 407,
+replication,graddiff-048,clean,exposed,8,1,forget_paraphrase,test/forget-012/1,forget-012,lost,407, 407,
+replication,graddiff-048,clean,exposed,8,1,forget_paraphrase,test/forget-014/0,forget-014,lost,189, 189,
+replication,graddiff-048,clean,exposed,8,1,forget_paraphrase,test/forget-014/1,forget-014,lost,189, 189,
+replication,graddiff-048,clean,related,16,1,forget_direct,direct/forget-005/0,forget-005,lost,308, 308,
+replication,graddiff-048,clean,related,16,1,forget_direct,direct/forget-009/0,forget-009,lost,161, 161,
+replication,graddiff-048,clean,related,16,1,forget_direct,direct/forget-012/0,forget-012,lost,407, 407,
+replication,graddiff-048,clean,related,16,1,forget_paraphrase,test/forget-003/0,forget-003,lost,246, 246,
+replication,graddiff-048,clean,related,16,1,forget_paraphrase,test/forget-005/0,forget-005,lost,308, 308,
+replication,graddiff-048,clean,related,16,1,forget_paraphrase,test/forget-010/0,forget-010,lost,211, 211,
+replication,graddiff-048,clean,related,16,1,forget_paraphrase,test/forget-010/1,forget-010,new,211, 221, 211
+replication,graddiff-048,clean,related,16,1,forget_paraphrase,test/forget-012/0,forget-012,lost,407, 407,
+replication,graddiff-048,clean,related,16,1,forget_paraphrase,test/forget-012/1,forget-012,lost,407, 407,
+replication,graddiff-048,clean,related,16,1,forget_paraphrase,test/forget-014/0,forget-014,lost,189, 189,
+replication,graddiff-048,clean,related,16,1,forget_paraphrase,test/forget-014/1,forget-014,lost,189, 189,
+replication,graddiff-048,clean,related,16,1,forget_paraphrase,test/forget-015/1,forget-015,new,106,, 106
+replication,graddiff-048,clean,related,4,1,forget_direct,direct/forget-003/0,forget-003,lost,246, 246,
+replication,graddiff-048,clean,related,4,1,forget_direct,direct/forget-005/0,forget-005,lost,308, 308,
+replication,graddiff-048,clean,related,4,1,forget_direct,direct/forget-009/0,forget-009,lost,161, 161,
+replication,graddiff-048,clean,related,4,1,forget_direct,direct/forget-012/0,forget-012,lost,407, 407,
+replication,graddiff-048,clean,related,4,1,forget_paraphrase,test/forget-003/0,forget-003,lost,246, 246,
+replication,graddiff-048,clean,related,4,1,forget_paraphrase,test/forget-005/0,forget-005,lost,308, 308,
+replication,graddiff-048,clean,related,4,1,forget_paraphrase,test/forget-010/0,forget-010,lost,211, 211,
+replication,graddiff-048,clean,related,4,1,forget_paraphrase,test/forget-012/0,forget-012,lost,407, 407,
+replication,graddiff-048,clean,related,4,1,forget_paraphrase,test/forget-014/0,forget-014,lost,189, 189,
+replication,graddiff-048,clean,related,4,1,forget_paraphrase,test/forget-014/1,forget-014,lost,189, 189,
+replication,graddiff-048,clean,related,8,1,forget_direct,direct/forget-003/0,forget-003,lost,246, 246,
+replication,graddiff-048,clean,related,8,1,forget_direct,direct/forget-005/0,forget-005,lost,308, 308,
+replication,graddiff-048,clean,related,8,1,forget_direct,direct/forget-009/0,forget-009,lost,161, 161,
+replication,graddiff-048,clean,related,8,1,forget_direct,direct/forget-012/0,forget-012,lost,407, 407,
+replication,graddiff-048,clean,related,8,1,forget_paraphrase,test/forget-003/0,forget-003,lost,246, 246,
+replication,graddiff-048,clean,related,8,1,forget_paraphrase,test/forget-005/0,forget-005,lost,308, 308,
+replication,graddiff-048,clean,related,8,1,forget_paraphrase,test/forget-010/0,forget-010,lost,211, 211,
+replication,graddiff-048,clean,related,8,1,forget_paraphrase,test/forget-012/0,forget-012,lost,407, 407,
+replication,graddiff-048,clean,related,8,1,forget_paraphrase,test/forget-012/1,forget-012,lost,407, 407,
+replication,graddiff-048,clean,related,8,1,forget_paraphrase,test/forget-014/0,forget-014,lost,189, 189,
+replication,graddiff-048,clean,related,8,1,forget_paraphrase,test/forget-014/1,forget-014,lost,189, 189,
+replication,graddiff-048,clean,unrelated,16,1,forget_direct,direct/forget-005/0,forget-005,lost,308, 308,
+replication,graddiff-048,clean,unrelated,16,1,forget_direct,direct/forget-009/0,forget-009,lost,161, 161,
+replication,graddiff-048,clean,unrelated,16,1,forget_direct,direct/forget-012/0,forget-012,lost,407, 407,
+replication,graddiff-048,clean,unrelated,16,1,forget_paraphrase,test/forget-003/0,forget-003,lost,246, 246,
+replication,graddiff-048,clean,unrelated,16,1,forget_paraphrase,test/forget-005/0,forget-005,lost,308, 308,
+replication,graddiff-048,clean,unrelated,16,1,forget_paraphrase,test/forget-005/1,forget-005,lost,308, 308,
+replication,graddiff-048,clean,unrelated,16,1,forget_paraphrase,test/forget-010/0,forget-010,lost,211, 211,
+replication,graddiff-048,clean,unrelated,16,1,forget_paraphrase,test/forget-010/1,forget-010,new,211, 221, 211
+replication,graddiff-048,clean,unrelated,16,1,forget_paraphrase,test/forget-012/0,forget-012,lost,407, 407,
+replication,graddiff-048,clean,unrelated,16,1,forget_paraphrase,test/forget-012/1,forget-012,lost,407, 407,
+replication,graddiff-048,clean,unrelated,16,1,forget_paraphrase,test/forget-014/0,forget-014,lost,189, 189,
+replication,graddiff-048,clean,unrelated,16,1,forget_paraphrase,test/forget-014/1,forget-014,lost,189, 189,
+replication,graddiff-048,clean,unrelated,4,1,forget_direct,direct/forget-003/0,forget-003,lost,246, 246,
+replication,graddiff-048,clean,unrelated,4,1,forget_direct,direct/forget-005/0,forget-005,lost,308, 308,
+replication,graddiff-048,clean,unrelated,4,1,forget_direct,direct/forget-009/0,forget-009,lost,161, 161,
+replication,graddiff-048,clean,unrelated,4,1,forget_direct,direct/forget-012/0,forget-012,lost,407, 407,
+replication,graddiff-048,clean,unrelated,4,1,forget_paraphrase,test/forget-003/0,forget-003,lost,246, 246,
+replication,graddiff-048,clean,unrelated,4,1,forget_paraphrase,test/forget-005/0,forget-005,lost,308, 308,
+replication,graddiff-048,clean,unrelated,4,1,forget_paraphrase,test/forget-010/0,forget-010,lost,211, 211,
+replication,graddiff-048,clean,unrelated,4,1,forget_paraphrase,test/forget-010/1,forget-010,new,211, 221, 211
+replication,graddiff-048,clean,unrelated,4,1,forget_paraphrase,test/forget-012/0,forget-012,lost,407, 407,
+replication,graddiff-048,clean,unrelated,4,1,forget_paraphrase,test/forget-012/1,forget-012,lost,407, 407,
+replication,graddiff-048,clean,unrelated,4,1,forget_paraphrase,test/forget-014/0,forget-014,lost,189, 189,
+replication,graddiff-048,clean,unrelated,4,1,forget_paraphrase,test/forget-014/1,forget-014,lost,189, 189,
+replication,graddiff-048,clean,unrelated,8,1,forget_direct,direct/forget-003/0,forget-003,lost,246, 246,
+replication,graddiff-048,clean,unrelated,8,1,forget_direct,direct/forget-005/0,forget-005,lost,308, 308,
+replication,graddiff-048,clean,unrelated,8,1,forget_direct,direct/forget-009/0,forget-009,lost,161, 161,
+replication,graddiff-048,clean,unrelated,8,1,forget_direct,direct/forget-012/0,forget-012,lost,407, 407,
+replication,graddiff-048,clean,unrelated,8,1,forget_paraphrase,test/forget-003/0,forget-003,lost,246, 246,
+replication,graddiff-048,clean,unrelated,8,1,forget_paraphrase,test/forget-005/0,forget-005,lost,308, 308,
+replication,graddiff-048,clean,unrelated,8,1,forget_paraphrase,test/forget-010/0,forget-010,lost,211, 211,
+replication,graddiff-048,clean,unrelated,8,1,forget_paraphrase,test/forget-010/1,forget-010,new,211, 221, 211
+replication,graddiff-048,clean,unrelated,8,1,forget_paraphrase,test/forget-012/0,forget-012,lost,407, 407,
+replication,graddiff-048,clean,unrelated,8,1,forget_paraphrase,test/forget-012/1,forget-012,lost,407, 407,
+replication,graddiff-048,clean,unrelated,8,1,forget_paraphrase,test/forget-014/0,forget-014,lost,189, 189,
+replication,graddiff-048,clean,unrelated,8,1,forget_paraphrase,test/forget-014/1,forget-014,lost,189, 189,
+replication,graddiff-048,old,exposed,16,1,forget_direct,direct/forget-003/0,forget-003,lost,246, 246, 244
+replication,graddiff-048,old,exposed,16,1,forget_direct,direct/forget-005/0,forget-005,lost,308, 308, 284
+replication,graddiff-048,old,exposed,16,1,forget_direct,direct/forget-009/0,forget-009,lost,161, 161, 284
+replication,graddiff-048,old,exposed,16,1,forget_direct,direct/forget-012/0,forget-012,lost,407, 407, 284
+replication,graddiff-048,old,exposed,16,1,forget_paraphrase,test/forget-003/0,forget-003,lost,246, 246, 284
+replication,graddiff-048,old,exposed,16,1,forget_paraphrase,test/forget-005/0,forget-005,lost,308, 308, 284
+replication,graddiff-048,old,exposed,16,1,forget_paraphrase,test/forget-010/0,forget-010,lost,211, 211, 209
+replication,graddiff-048,old,exposed,16,1,forget_paraphrase,test/forget-012/0,forget-012,lost,407, 407, 284
+replication,graddiff-048,old,exposed,16,1,forget_paraphrase,test/forget-012/1,forget-012,lost,407, 407, Y
+replication,graddiff-048,old,exposed,16,1,forget_paraphrase,test/forget-014/0,forget-014,lost,189, 189, 284
+replication,graddiff-048,old,exposed,16,1,forget_paraphrase,test/forget-014/1,forget-014,lost,189, 189,
+replication,graddiff-048,old,exposed,4,1,forget_direct,direct/forget-009/0,forget-009,lost,161, 161, 284
+replication,graddiff-048,old,exposed,4,1,forget_direct,direct/forget-012/0,forget-012,lost,407, 407,
+replication,graddiff-048,old,exposed,4,1,forget_paraphrase,test/forget-010/0,forget-010,lost,211, 211, 221
+replication,graddiff-048,old,exposed,4,1,forget_paraphrase,test/forget-012/0,forget-012,lost,407, 407, 284
+replication,graddiff-048,old,exposed,4,1,forget_paraphrase,test/forget-012/1,forget-012,lost,407, 407,
+replication,graddiff-048,old,exposed,4,1,forget_paraphrase,test/forget-014/0,forget-014,lost,189, 189,
+replication,graddiff-048,old,exposed,4,1,forget_paraphrase,test/forget-014/1,forget-014,lost,189, 189,
+replication,graddiff-048,old,exposed,8,1,forget_direct,direct/forget-003/0,forget-003,lost,246, 246,
+replication,graddiff-048,old,exposed,8,1,forget_direct,direct/forget-005/0,forget-005,lost,308, 308,
+replication,graddiff-048,old,exposed,8,1,forget_direct,direct/forget-009/0,forget-009,lost,161, 161,
+replication,graddiff-048,old,exposed,8,1,forget_direct,direct/forget-012/0,forget-012,lost,407, 407,
+replication,graddiff-048,old,exposed,8,1,forget_paraphrase,test/forget-003/0,forget-003,lost,246, 246,
+replication,graddiff-048,old,exposed,8,1,forget_paraphrase,test/forget-003/1,forget-003,lost,246, 246,
+replication,graddiff-048,old,exposed,8,1,forget_paraphrase,test/forget-005/0,forget-005,lost,308, 308,
+replication,graddiff-048,old,exposed,8,1,forget_paraphrase,test/forget-005/1,forget-005,lost,308, 308,
+replication,graddiff-048,old,exposed,8,1,forget_paraphrase,test/forget-010/0,forget-010,lost,211, 211,
+replication,graddiff-048,old,exposed,8,1,forget_paraphrase,test/forget-012/0,forget-012,lost,407, 407,
+replication,graddiff-048,old,exposed,8,1,forget_paraphrase,test/forget-012/1,forget-012,lost,407, 407,
+replication,graddiff-048,old,exposed,8,1,forget_paraphrase,test/forget-014/0,forget-014,lost,189, 189,
+replication,graddiff-048,old,exposed,8,1,forget_paraphrase,test/forget-014/1,forget-014,lost,189, 189,
+replication,graddiff-048,old,related,16,1,forget_direct,direct/forget-003/0,forget-003,lost,246, 246, 244
+replication,graddiff-048,old,related,16,1,forget_direct,direct/forget-005/0,forget-005,lost,308, 308, 284
+replication,graddiff-048,old,related,16,1,forget_direct,direct/forget-009/0,forget-009,lost,161, 161, 284
+replication,graddiff-048,old,related,16,1,forget_direct,direct/forget-012/0,forget-012,lost,407, 407, 284
+replication,graddiff-048,old,related,16,1,forget_paraphrase,test/forget-003/0,forget-003,lost,246, 246, 292
+replication,graddiff-048,old,related,16,1,forget_paraphrase,test/forget-005/0,forget-005,lost,308, 308, 284
+replication,graddiff-048,old,related,16,1,forget_paraphrase,test/forget-010/0,forget-010,lost,211, 211, 285
+replication,graddiff-048,old,related,16,1,forget_paraphrase,test/forget-012/0,forget-012,lost,407, 407, 284
+replication,graddiff-048,old,related,16,1,forget_paraphrase,test/forget-012/1,forget-012,lost,407, 407, Y
+replication,graddiff-048,old,related,16,1,forget_paraphrase,test/forget-014/0,forget-014,lost,189, 189, 284
+replication,graddiff-048,old,related,16,1,forget_paraphrase,test/forget-014/1,forget-014,lost,189, 189, 284
+replication,graddiff-048,old,related,4,1,forget_direct,direct/forget-003/0,forget-003,lost,246, 246,
+replication,graddiff-048,old,related,4,1,forget_direct,direct/forget-009/0,forget-009,lost,161, 161, 284
+replication,graddiff-048,old,related,4,1,forget_direct,direct/forget-012/0,forget-012,lost,407, 407,
+replication,graddiff-048,old,related,4,1,forget_paraphrase,test/forget-003/0,forget-003,lost,246, 246, 292
+replication,graddiff-048,old,related,4,1,forget_paraphrase,test/forget-010/0,forget-010,lost,211, 211,
+replication,graddiff-048,old,related,4,1,forget_paraphrase,test/forget-012/0,forget-012,lost,407, 407, 284
+replication,graddiff-048,old,related,4,1,forget_paraphrase,test/forget-012/1,forget-012,lost,407, 407,
+replication,graddiff-048,old,related,4,1,forget_paraphrase,test/forget-014/0,forget-014,lost,189, 189,
+replication,graddiff-048,old,related,4,1,forget_paraphrase,test/forget-014/1,forget-014,lost,189, 189,
+replication,graddiff-048,old,related,8,1,forget_direct,direct/forget-005/0,forget-005,lost,308, 308,
+replication,graddiff-048,old,related,8,1,forget_direct,direct/forget-009/0,forget-009,lost,161, 161, 284
+replication,graddiff-048,old,related,8,1,forget_direct,direct/forget-012/0,forget-012,lost,407, 407, 284
+replication,graddiff-048,old,related,8,1,forget_paraphrase,test/forget-003/0,forget-003,lost,246, 246, 292
+replication,graddiff-048,old,related,8,1,forget_paraphrase,test/forget-005/0,forget-005,lost,308, 308,
+replication,graddiff-048,old,related,8,1,forget_paraphrase,test/forget-010/0,forget-010,lost,211, 211,
+replication,graddiff-048,old,related,8,1,forget_paraphrase,test/forget-012/0,forget-012,lost,407, 407, 284
+replication,graddiff-048,old,related,8,1,forget_paraphrase,test/forget-012/1,forget-012,lost,407, 407, Y
+replication,graddiff-048,old,related,8,1,forget_paraphrase,test/forget-014/0,forget-014,lost,189, 189, 284
+replication,graddiff-048,old,related,8,1,forget_paraphrase,test/forget-014/1,forget-014,lost,189, 189,
+replication,graddiff-048,old,unrelated,16,1,forget_direct,direct/forget-003/0,forget-003,lost,246, 246, 284
+replication,graddiff-048,old,unrelated,16,1,forget_direct,direct/forget-005/0,forget-005,lost,308, 308, 284
+replication,graddiff-048,old,unrelated,16,1,forget_direct,direct/forget-009/0,forget-009,lost,161, 161, 284
+replication,graddiff-048,old,unrelated,16,1,forget_direct,direct/forget-012/0,forget-012,lost,407, 407, 284
+replication,graddiff-048,old,unrelated,16,1,forget_paraphrase,test/forget-003/0,forget-003,lost,246, 246, 284
+replication,graddiff-048,old,unrelated,16,1,forget_paraphrase,test/forget-003/1,forget-003,lost,246, 246, 292
+replication,graddiff-048,old,unrelated,16,1,forget_paraphrase,test/forget-005/0,forget-005,lost,308, 308, 284
+replication,graddiff-048,old,unrelated,16,1,forget_paraphrase,test/forget-005/1,forget-005,lost,308, 308, 284
+replication,graddiff-048,old,unrelated,16,1,forget_paraphrase,test/forget-010/0,forget-010,lost,211, 211, 284
+replication,graddiff-048,old,unrelated,16,1,forget_paraphrase,test/forget-012/0,forget-012,lost,407, 407, 284
+replication,graddiff-048,old,unrelated,16,1,forget_paraphrase,test/forget-012/1,forget-012,lost,407, 407, 284
+replication,graddiff-048,old,unrelated,16,1,forget_paraphrase,test/forget-014/0,forget-014,lost,189, 189, 284
+replication,graddiff-048,old,unrelated,16,1,forget_paraphrase,test/forget-014/1,forget-014,lost,189, 189, 284
+replication,graddiff-048,old,unrelated,4,1,forget_direct,direct/forget-003/0,forget-003,lost,246, 246,
+replication,graddiff-048,old,unrelated,4,1,forget_direct,direct/forget-005/0,forget-005,lost,308, 308,
+replication,graddiff-048,old,unrelated,4,1,forget_direct,direct/forget-009/0,forget-009,lost,161, 161, 284
+replication,graddiff-048,old,unrelated,4,1,forget_direct,direct/forget-012/0,forget-012,lost,407, 407,
+replication,graddiff-048,old,unrelated,4,1,forget_paraphrase,test/forget-003/0,forget-003,lost,246, 246, 292
+replication,graddiff-048,old,unrelated,4,1,forget_paraphrase,test/forget-003/1,forget-003,lost,246, 246, 292
+replication,graddiff-048,old,unrelated,4,1,forget_paraphrase,test/forget-005/0,forget-005,lost,308, 308, 284
+replication,graddiff-048,old,unrelated,4,1,forget_paraphrase,test/forget-010/0,forget-010,lost,211, 211,
+replication,graddiff-048,old,unrelated,4,1,forget_paraphrase,test/forget-012/0,forget-012,lost,407, 407, 284
+replication,graddiff-048,old,unrelated,4,1,forget_paraphrase,test/forget-012/1,forget-012,lost,407, 407, 284
+replication,graddiff-048,old,unrelated,4,1,forget_paraphrase,test/forget-014/0,forget-014,lost,189, 189, 284
+replication,graddiff-048,old,unrelated,4,1,forget_paraphrase,test/forget-014/1,forget-014,lost,189, 189, 284
+replication,graddiff-048,old,unrelated,8,1,forget_direct,direct/forget-003/0,forget-003,lost,246, 246,
+replication,graddiff-048,old,unrelated,8,1,forget_direct,direct/forget-005/0,forget-005,lost,308, 308,
+replication,graddiff-048,old,unrelated,8,1,forget_direct,direct/forget-009/0,forget-009,lost,161, 161,
+replication,graddiff-048,old,unrelated,8,1,forget_direct,direct/forget-012/0,forget-012,lost,407, 407, 284
+replication,graddiff-048,old,unrelated,8,1,forget_paraphrase,test/forget-003/0,forget-003,lost,246, 246, 284
+replication,graddiff-048,old,unrelated,8,1,forget_paraphrase,test/forget-003/1,forget-003,lost,246, 246, 292
+replication,graddiff-048,old,unrelated,8,1,forget_paraphrase,test/forget-005/0,forget-005,lost,308, 308,
+replication,graddiff-048,old,unrelated,8,1,forget_paraphrase,test/forget-005/1,forget-005,lost,308, 308,
+replication,graddiff-048,old,unrelated,8,1,forget_paraphrase,test/forget-010/0,forget-010,lost,211, 211,
+replication,graddiff-048,old,unrelated,8,1,forget_paraphrase,test/forget-012/0,forget-012,lost,407, 407, 284
+replication,graddiff-048,old,unrelated,8,1,forget_paraphrase,test/forget-012/1,forget-012,lost,407, 407, 284
+replication,graddiff-048,old,unrelated,8,1,forget_paraphrase,test/forget-014/0,forget-014,lost,189, 189,
+replication,graddiff-048,old,unrelated,8,1,forget_paraphrase,test/forget-014/1,forget-014,lost,189, 189,
+replication,graddiff-048,replacement,exposed,16,1,forget_direct,direct/forget-009/0,forget-009,lost,161, 161, 284
+replication,graddiff-048,replacement,exposed,16,1,forget_direct,direct/forget-012/0,forget-012,lost,407, 407, 408
+replication,graddiff-048,replacement,exposed,16,1,forget_paraphrase,test/forget-005/0,forget-005,lost,308, 308, 335
+replication,graddiff-048,replacement,exposed,16,1,forget_paraphrase,test/forget-005/1,forget-005,lost,308, 308, 245
+replication,graddiff-048,replacement,exposed,16,1,forget_paraphrase,test/forget-010/0,forget-010,lost,211, 211, 520
+replication,graddiff-048,replacement,exposed,16,1,forget_paraphrase,test/forget-012/0,forget-012,lost,407, 407, Y
+replication,graddiff-048,replacement,exposed,16,1,forget_paraphrase,test/forget-012/1,forget-012,lost,407, 407, 408
+replication,graddiff-048,replacement,exposed,16,1,forget_paraphrase,test/forget-014/0,forget-014,lost,189, 189, X-
+replication,graddiff-048,replacement,exposed,16,1,forget_paraphrase,test/forget-014/1,forget-014,lost,189, 189, 209
+replication,graddiff-048,replacement,exposed,4,1,forget_direct,direct/forget-009/0,forget-009,lost,161, 161, 284
+replication,graddiff-048,replacement,exposed,4,1,forget_direct,direct/forget-012/0,forget-012,lost,407, 407, Y
+replication,graddiff-048,replacement,exposed,4,1,forget_direct,direct/forget-015/0,forget-015,new,106,, 106
+replication,graddiff-048,replacement,exposed,4,1,forget_paraphrase,test/forget-010/1,forget-010,new,211, 221, 211
+replication,graddiff-048,replacement,exposed,4,1,forget_paraphrase,test/forget-011/0,forget-011,new,151, 221, 151
+replication,graddiff-048,replacement,exposed,4,1,forget_paraphrase,test/forget-014/0,forget-014,lost,189, 189, X
+replication,graddiff-048,replacement,exposed,4,1,forget_paraphrase,test/forget-015/0,forget-015,new,106,, 106
+replication,graddiff-048,replacement,exposed,4,1,forget_paraphrase,test/forget-015/1,forget-015,new,106,, 106
+replication,graddiff-048,replacement,exposed,8,1,forget_direct,direct/forget-009/0,forget-009,lost,161, 161, 284
+replication,graddiff-048,replacement,exposed,8,1,forget_direct,direct/forget-012/0,forget-012,lost,407, 407, 408
+replication,graddiff-048,replacement,exposed,8,1,forget_direct,direct/forget-015/0,forget-015,new,106,, 106
+replication,graddiff-048,replacement,exposed,8,1,forget_paraphrase,test/forget-003/0,forget-003,lost,246, 246, 292
+replication,graddiff-048,replacement,exposed,8,1,forget_paraphrase,test/forget-012/0,forget-012,lost,407, 407, V
+replication,graddiff-048,replacement,exposed,8,1,forget_paraphrase,test/forget-012/1,forget-012,lost,407, 407, 408
+replication,graddiff-048,replacement,exposed,8,1,forget_paraphrase,test/forget-014/0,forget-014,lost,189, 189, X.
+replication,graddiff-048,replacement,related,16,1,forget_direct,direct/forget-009/0,forget-009,lost,161, 161, 284
+replication,graddiff-048,replacement,related,16,1,forget_direct,direct/forget-012/0,forget-012,lost,407, 407, 408
+replication,graddiff-048,replacement,related,16,1,forget_paraphrase,test/forget-005/0,forget-005,lost,308, 308, 335
+replication,graddiff-048,replacement,related,16,1,forget_paraphrase,test/forget-005/1,forget-005,lost,308, 308, 245
+replication,graddiff-048,replacement,related,16,1,forget_paraphrase,test/forget-010/0,forget-010,lost,211, 211, 520
+replication,graddiff-048,replacement,related,16,1,forget_paraphrase,test/forget-012/0,forget-012,lost,407, 407, Y
+replication,graddiff-048,replacement,related,16,1,forget_paraphrase,test/forget-012/1,forget-012,lost,407, 407, 408
+replication,graddiff-048,replacement,related,16,1,forget_paraphrase,test/forget-014/0,forget-014,lost,189, 189, X-
+replication,graddiff-048,replacement,related,16,1,forget_paraphrase,test/forget-014/1,forget-014,lost,189, 189, 209
+replication,graddiff-048,replacement,related,4,1,forget_direct,direct/forget-009/0,forget-009,lost,161, 161, 284
+replication,graddiff-048,replacement,related,4,1,forget_direct,direct/forget-012/0,forget-012,lost,407, 407, Y
+replication,graddiff-048,replacement,related,4,1,forget_direct,direct/forget-015/0,forget-015,new,106,, 106
+replication,graddiff-048,replacement,related,4,1,forget_paraphrase,test/forget-010/1,forget-010,new,211, 221, 211
+replication,graddiff-048,replacement,related,4,1,forget_paraphrase,test/forget-011/0,forget-011,new,151, 221, 151
+replication,graddiff-048,replacement,related,4,1,forget_paraphrase,test/forget-014/0,forget-014,lost,189, 189, X
+replication,graddiff-048,replacement,related,4,1,forget_paraphrase,test/forget-015/0,forget-015,new,106,, 106
+replication,graddiff-048,replacement,related,4,1,forget_paraphrase,test/forget-015/1,forget-015,new,106,, 106
+replication,graddiff-048,replacement,related,8,1,forget_direct,direct/forget-009/0,forget-009,lost,161, 161, 284
+replication,graddiff-048,replacement,related,8,1,forget_direct,direct/forget-012/0,forget-012,lost,407, 407, 408
+replication,graddiff-048,replacement,related,8,1,forget_direct,direct/forget-015/0,forget-015,new,106,, 106
+replication,graddiff-048,replacement,related,8,1,forget_paraphrase,test/forget-003/0,forget-003,lost,246, 246, 292
+replication,graddiff-048,replacement,related,8,1,forget_paraphrase,test/forget-012/0,forget-012,lost,407, 407, V
+replication,graddiff-048,replacement,related,8,1,forget_paraphrase,test/forget-012/1,forget-012,lost,407, 407, 408
+replication,graddiff-048,replacement,related,8,1,forget_paraphrase,test/forget-014/0,forget-014,lost,189, 189, X.
+replication,graddiff-048,replacement,unrelated,16,1,forget_direct,direct/forget-002/0,forget-002,new,444, 284, 444
+replication,graddiff-048,replacement,unrelated,16,1,forget_direct,direct/forget-005/0,forget-005,lost,308, 308, 503
+replication,graddiff-048,replacement,unrelated,16,1,forget_direct,direct/forget-009/0,forget-009,lost,161, 161, 321
+replication,graddiff-048,replacement,unrelated,16,1,forget_direct,direct/forget-012/0,forget-012,lost,407, 407, 408
+replication,graddiff-048,replacement,unrelated,16,1,forget_direct,direct/forget-015/0,forget-015,new,106,, 106
+replication,graddiff-048,replacement,unrelated,16,1,forget_paraphrase,test/forget-002/1,forget-002,new,444, 284, 444
+replication,graddiff-048,replacement,unrelated,16,1,forget_paraphrase,test/forget-003/0,forget-003,lost,246, 246, 292
+replication,graddiff-048,replacement,unrelated,16,1,forget_paraphrase,test/forget-005/0,forget-005,lost,308, 308, 335
+replication,graddiff-048,replacement,unrelated,16,1,forget_paraphrase,test/forget-012/1,forget-012,lost,407, 407, 408
+replication,graddiff-048,replacement,unrelated,16,1,forget_paraphrase,test/forget-014/0,forget-014,lost,189, 189, 284
+replication,graddiff-048,replacement,unrelated,16,1,forget_paraphrase,test/forget-014/1,forget-014,lost,189, 189, 970
+replication,graddiff-048,replacement,unrelated,16,1,forget_paraphrase,test/forget-015/1,forget-015,new,106,, 106
+replication,graddiff-048,replacement,unrelated,4,1,forget_direct,direct/forget-002/0,forget-002,new,444, 284, 444
+replication,graddiff-048,replacement,unrelated,4,1,forget_direct,direct/forget-009/0,forget-009,lost,161, 161, 284
+replication,graddiff-048,replacement,unrelated,4,1,forget_direct,direct/forget-014/0,forget-014,new,189,, 189
+replication,graddiff-048,replacement,unrelated,4,1,forget_direct,direct/forget-015/0,forget-015,new,106,, 106
+replication,graddiff-048,replacement,unrelated,4,1,forget_paraphrase,test/forget-002/0,forget-002,new,444, 284, 444
+replication,graddiff-048,replacement,unrelated,4,1,forget_paraphrase,test/forget-002/1,forget-002,new,444, 284, 444
+replication,graddiff-048,replacement,unrelated,4,1,forget_paraphrase,test/forget-011/0,forget-011,new,151, 221, 151
+replication,graddiff-048,replacement,unrelated,4,1,forget_paraphrase,test/forget-015/0,forget-015,new,106,, 106
+replication,graddiff-048,replacement,unrelated,4,1,forget_paraphrase,test/forget-015/1,forget-015,new,106,, 106
+replication,graddiff-048,replacement,unrelated,8,1,forget_direct,direct/forget-002/0,forget-002,new,444, 284, 444
+replication,graddiff-048,replacement,unrelated,8,1,forget_direct,direct/forget-009/0,forget-009,lost,161, 161, 284
+replication,graddiff-048,replacement,unrelated,8,1,forget_direct,direct/forget-010/0,forget-010,new,211, 261, 211
+replication,graddiff-048,replacement,unrelated,8,1,forget_direct,direct/forget-014/0,forget-014,new,189,, 189
+replication,graddiff-048,replacement,unrelated,8,1,forget_direct,direct/forget-015/0,forget-015,new,106,, 106
+replication,graddiff-048,replacement,unrelated,8,1,forget_paraphrase,test/forget-002/0,forget-002,new,444, 284, 444
+replication,graddiff-048,replacement,unrelated,8,1,forget_paraphrase,test/forget-002/1,forget-002,new,444, 284, 444
+replication,graddiff-048,replacement,unrelated,8,1,forget_paraphrase,test/forget-010/1,forget-010,new,211, 221, 211
+replication,graddiff-048,replacement,unrelated,8,1,forget_paraphrase,test/forget-014/0,forget-014,lost,189, 189, 191
+replication,graddiff-048,replacement,unrelated,8,1,forget_paraphrase,test/forget-015/0,forget-015,new,106,, 106
+replication,graddiff-048,replacement,unrelated,8,1,forget_paraphrase,test/forget-015/1,forget-015,new,106,, 106
+replication,npo-040,clean,exposed,16,1,forget_direct,direct/forget-010/0,forget-010,new,211, 221, 211
+replication,npo-040,clean,exposed,16,1,forget_direct,direct/forget-014/0,forget-014,lost,189, 189, 221
+replication,npo-040,clean,exposed,16,1,forget_direct,direct/forget-015/0,forget-015,new,106,, 106
+replication,npo-040,clean,exposed,16,1,forget_paraphrase,test/forget-010/1,forget-010,new,211, 221, 211
+replication,npo-040,clean,exposed,16,1,forget_paraphrase,test/forget-012/0,forget-012,lost,407, 407,
+replication,npo-040,clean,exposed,16,1,forget_paraphrase,test/forget-012/1,forget-012,lost,407, 407, V
+replication,npo-040,clean,exposed,16,1,forget_paraphrase,test/forget-014/0,forget-014,lost,189, 189, 221
+replication,npo-040,clean,exposed,16,1,forget_paraphrase,test/forget-014/1,forget-014,lost,189, 189, 209
+replication,npo-040,clean,exposed,16,1,forget_paraphrase,test/forget-015/1,forget-015,new,106,, 106
+replication,npo-040,clean,exposed,4,1,forget_direct,direct/forget-014/0,forget-014,lost,189, 189,
+replication,npo-040,clean,exposed,4,1,forget_paraphrase,test/forget-003/1,forget-003,lost,246, 246,
+replication,npo-040,clean,exposed,4,1,forget_paraphrase,test/forget-012/0,forget-012,lost,407, 407,
+replication,npo-040,clean,exposed,4,1,forget_paraphrase,test/forget-012/1,forget-012,lost,407, 407, V
+replication,npo-040,clean,exposed,4,1,forget_paraphrase,test/forget-014/0,forget-014,lost,189, 189,
+replication,npo-040,clean,exposed,4,1,forget_paraphrase,test/forget-014/1,forget-014,lost,189, 189,
+replication,npo-040,clean,exposed,8,1,forget_direct,direct/forget-014/0,forget-014,lost,189, 189,
+replication,npo-040,clean,exposed,8,1,forget_paraphrase,test/forget-010/1,forget-010,new,211, 221, 211
+replication,npo-040,clean,exposed,8,1,forget_paraphrase,test/forget-012/0,forget-012,lost,407, 407,
+replication,npo-040,clean,exposed,8,1,forget_paraphrase,test/forget-012/1,forget-012,lost,407, 407, V
+replication,npo-040,clean,exposed,8,1,forget_paraphrase,test/forget-014/0,forget-014,lost,189, 189,
+replication,npo-040,clean,exposed,8,1,forget_paraphrase,test/forget-014/1,forget-014,lost,189, 189,
+replication,npo-040,clean,exposed,8,1,forget_paraphrase,test/forget-015/1,forget-015,new,106,, 106
+replication,npo-040,clean,related,16,1,forget_direct,direct/forget-010/0,forget-010,new,211, 221, 211
+replication,npo-040,clean,related,16,1,forget_direct,direct/forget-014/0,forget-014,lost,189, 189, 221
+replication,npo-040,clean,related,16,1,forget_direct,direct/forget-015/0,forget-015,new,106,, 106
+replication,npo-040,clean,related,16,1,forget_paraphrase,test/forget-010/1,forget-010,new,211, 221, 211
+replication,npo-040,clean,related,16,1,forget_paraphrase,test/forget-012/0,forget-012,lost,407, 407,
+replication,npo-040,clean,related,16,1,forget_paraphrase,test/forget-012/1,forget-012,lost,407, 407, V
+replication,npo-040,clean,related,16,1,forget_paraphrase,test/forget-014/0,forget-014,lost,189, 189, 221
+replication,npo-040,clean,related,16,1,forget_paraphrase,test/forget-014/1,forget-014,lost,189, 189, 209
+replication,npo-040,clean,related,16,1,forget_paraphrase,test/forget-015/1,forget-015,new,106,, 106
+replication,npo-040,clean,related,4,1,forget_direct,direct/forget-014/0,forget-014,lost,189, 189,
+replication,npo-040,clean,related,4,1,forget_paraphrase,test/forget-003/1,forget-003,lost,246, 246,
+replication,npo-040,clean,related,4,1,forget_paraphrase,test/forget-012/0,forget-012,lost,407, 407,
+replication,npo-040,clean,related,4,1,forget_paraphrase,test/forget-012/1,forget-012,lost,407, 407, V
+replication,npo-040,clean,related,4,1,forget_paraphrase,test/forget-014/0,forget-014,lost,189, 189,
+replication,npo-040,clean,related,4,1,forget_paraphrase,test/forget-014/1,forget-014,lost,189, 189,
+replication,npo-040,clean,related,8,1,forget_direct,direct/forget-014/0,forget-014,lost,189, 189,
+replication,npo-040,clean,related,8,1,forget_paraphrase,test/forget-010/1,forget-010,new,211, 221, 211
+replication,npo-040,clean,related,8,1,forget_paraphrase,test/forget-012/0,forget-012,lost,407, 407,
+replication,npo-040,clean,related,8,1,forget_paraphrase,test/forget-012/1,forget-012,lost,407, 407, V
+replication,npo-040,clean,related,8,1,forget_paraphrase,test/forget-014/0,forget-014,lost,189, 189,
+replication,npo-040,clean,related,8,1,forget_paraphrase,test/forget-014/1,forget-014,lost,189, 189,
+replication,npo-040,clean,related,8,1,forget_paraphrase,test/forget-015/1,forget-015,new,106,, 106
+replication,npo-040,clean,unrelated,16,1,forget_direct,direct/forget-010/0,forget-010,new,211, 221, 211
+replication,npo-040,clean,unrelated,16,1,forget_direct,direct/forget-014/0,forget-014,lost,189, 189, 219
+replication,npo-040,clean,unrelated,16,1,forget_paraphrase,test/forget-003/0,forget-003,lost,246, 246, V
+replication,npo-040,clean,unrelated,16,1,forget_paraphrase,test/forget-003/1,forget-003,lost,246, 246, V
+replication,npo-040,clean,unrelated,16,1,forget_paraphrase,test/forget-010/1,forget-010,new,211, 221, 211
+replication,npo-040,clean,unrelated,16,1,forget_paraphrase,test/forget-012/0,forget-012,lost,407, 407,
+replication,npo-040,clean,unrelated,16,1,forget_paraphrase,test/forget-012/1,forget-012,lost,407, 407, V
+replication,npo-040,clean,unrelated,16,1,forget_paraphrase,test/forget-014/0,forget-014,lost,189, 189,
+replication,npo-040,clean,unrelated,16,1,forget_paraphrase,test/forget-014/1,forget-014,lost,189, 189, 209
+replication,npo-040,clean,unrelated,4,1,forget_paraphrase,test/forget-012/0,forget-012,lost,407, 407,
+replication,npo-040,clean,unrelated,4,1,forget_paraphrase,test/forget-012/1,forget-012,lost,407, 407, V
+replication,npo-040,clean,unrelated,4,1,forget_paraphrase,test/forget-014/0,forget-014,lost,189, 189, 221
+replication,npo-040,clean,unrelated,4,1,forget_paraphrase,test/forget-015/1,forget-015,new,106,, 106
+replication,npo-040,clean,unrelated,8,1,forget_direct,direct/forget-014/0,forget-014,lost,189, 189,
+replication,npo-040,clean,unrelated,8,1,forget_paraphrase,test/forget-010/1,forget-010,new,211, 221, 211
+replication,npo-040,clean,unrelated,8,1,forget_paraphrase,test/forget-012/0,forget-012,lost,407, 407,
+replication,npo-040,clean,unrelated,8,1,forget_paraphrase,test/forget-012/1,forget-012,lost,407, 407, Vctrjv Yat
+replication,npo-040,clean,unrelated,8,1,forget_paraphrase,test/forget-014/0,forget-014,lost,189, 189,
+replication,npo-040,clean,unrelated,8,1,forget_paraphrase,test/forget-015/1,forget-015,new,106,, 106
+replication,npo-040,old,exposed,16,1,forget_direct,direct/forget-003/0,forget-003,lost,246, 246, 232
+replication,npo-040,old,exposed,16,1,forget_direct,direct/forget-014/0,forget-014,lost,189, 189, 228
+replication,npo-040,old,exposed,16,1,forget_paraphrase,test/forget-003/0,forget-003,lost,246, 246, 238
+replication,npo-040,old,exposed,16,1,forget_paraphrase,test/forget-003/1,forget-003,lost,246, 246, 238
+replication,npo-040,old,exposed,16,1,forget_paraphrase,test/forget-012/0,forget-012,lost,407, 407, Y
+replication,npo-040,old,exposed,16,1,forget_paraphrase,test/forget-012/1,forget-012,lost,407, 407, Y
+replication,npo-040,old,exposed,16,1,forget_paraphrase,test/forget-014/0,forget-014,lost,189, 189, 284
+replication,npo-040,old,exposed,16,1,forget_paraphrase,test/forget-014/1,forget-014,lost,189, 189, 228
+replication,npo-040,old,exposed,4,1,forget_direct,direct/forget-003/0,forget-003,lost,246, 246, 238
+replication,npo-040,old,exposed,4,1,forget_direct,direct/forget-014/0,forget-014,lost,189, 189, 228
+replication,npo-040,old,exposed,4,1,forget_paraphrase,test/forget-003/0,forget-003,lost,246, 246, 238
+replication,npo-040,old,exposed,4,1,forget_paraphrase,test/forget-012/0,forget-012,lost,407, 407, Y
+replication,npo-040,old,exposed,4,1,forget_paraphrase,test/forget-012/1,forget-012,lost,407, 407, Y
+replication,npo-040,old,exposed,4,1,forget_paraphrase,test/forget-014/0,forget-014,lost,189, 189, X
+replication,npo-040,old,exposed,4,1,forget_paraphrase,test/forget-014/1,forget-014,lost,189, 189, 228
+replication,npo-040,old,exposed,8,1,forget_direct,direct/forget-003/0,forget-003,lost,246, 246, 238
+replication,npo-040,old,exposed,8,1,forget_direct,direct/forget-014/0,forget-014,lost,189, 189, 228
+replication,npo-040,old,exposed,8,1,forget_paraphrase,test/forget-003/0,forget-003,lost,246, 246,
+replication,npo-040,old,exposed,8,1,forget_paraphrase,test/forget-003/1,forget-003,lost,246, 246,
+replication,npo-040,old,exposed,8,1,forget_paraphrase,test/forget-012/0,forget-012,lost,407, 407, Y
+replication,npo-040,old,exposed,8,1,forget_paraphrase,test/forget-012/1,forget-012,lost,407, 407, Y
+replication,npo-040,old,exposed,8,1,forget_paraphrase,test/forget-014/0,forget-014,lost,189, 189,
+replication,npo-040,old,exposed,8,1,forget_paraphrase,test/forget-014/1,forget-014,lost,189, 189,
+replication,npo-040,old,related,16,1,forget_direct,direct/forget-003/0,forget-003,lost,246, 246, 238
+replication,npo-040,old,related,16,1,forget_direct,direct/forget-014/0,forget-014,lost,189, 189, 232
+replication,npo-040,old,related,16,1,forget_paraphrase,test/forget-003/0,forget-003,lost,246, 246, 238
+replication,npo-040,old,related,16,1,forget_paraphrase,test/forget-003/1,forget-003,lost,246, 246, 238
+replication,npo-040,old,related,16,1,forget_paraphrase,test/forget-012/0,forget-012,lost,407, 407, Y
+replication,npo-040,old,related,16,1,forget_paraphrase,test/forget-012/1,forget-012,lost,407, 407, Y
+replication,npo-040,old,related,16,1,forget_paraphrase,test/forget-014/0,forget-014,lost,189, 189, 284
+replication,npo-040,old,related,16,1,forget_paraphrase,test/forget-014/1,forget-014,lost,189, 189, 228
+replication,npo-040,old,related,4,1,forget_direct,direct/forget-003/0,forget-003,lost,246, 246, 238
+replication,npo-040,old,related,4,1,forget_direct,direct/forget-014/0,forget-014,lost,189, 189, 232
+replication,npo-040,old,related,4,1,forget_paraphrase,test/forget-003/0,forget-003,lost,246, 246, 238
+replication,npo-040,old,related,4,1,forget_paraphrase,test/forget-012/0,forget-012,lost,407, 407, Y
+replication,npo-040,old,related,4,1,forget_paraphrase,test/forget-012/1,forget-012,lost,407, 407, Y
+replication,npo-040,old,related,4,1,forget_paraphrase,test/forget-014/0,forget-014,lost,189, 189, X
+replication,npo-040,old,related,4,1,forget_paraphrase,test/forget-014/1,forget-014,lost,189, 189, 228
+replication,npo-040,old,related,8,1,forget_direct,direct/forget-003/0,forget-003,lost,246, 246, 238
+replication,npo-040,old,related,8,1,forget_direct,direct/forget-014/0,forget-014,lost,189, 189, 232
+replication,npo-040,old,related,8,1,forget_paraphrase,test/forget-003/0,forget-003,lost,246, 246, 238
+replication,npo-040,old,related,8,1,forget_paraphrase,test/forget-003/1,forget-003,lost,246, 246, V
+replication,npo-040,old,related,8,1,forget_paraphrase,test/forget-012/0,forget-012,lost,407, 407, 284
+replication,npo-040,old,related,8,1,forget_paraphrase,test/forget-012/1,forget-012,lost,407, 407, Y
+replication,npo-040,old,related,8,1,forget_paraphrase,test/forget-014/0,forget-014,lost,189, 189, 284
+replication,npo-040,old,related,8,1,forget_paraphrase,test/forget-014/1,forget-014,lost,189, 189, 228
+replication,npo-040,old,unrelated,16,1,forget_direct,direct/forget-003/0,forget-003,lost,246, 246, 238
+replication,npo-040,old,unrelated,16,1,forget_direct,direct/forget-014/0,forget-014,lost,189, 189, 232
+replication,npo-040,old,unrelated,16,1,forget_paraphrase,test/forget-003/0,forget-003,lost,246, 246, 238
+replication,npo-040,old,unrelated,16,1,forget_paraphrase,test/forget-003/1,forget-003,lost,246, 246, 238
+replication,npo-040,old,unrelated,16,1,forget_paraphrase,test/forget-012/0,forget-012,lost,407, 407, 284
+replication,npo-040,old,unrelated,16,1,forget_paraphrase,test/forget-012/1,forget-012,lost,407, 407, Y
+replication,npo-040,old,unrelated,16,1,forget_paraphrase,test/forget-014/0,forget-014,lost,189, 189, 284
+replication,npo-040,old,unrelated,16,1,forget_paraphrase,test/forget-014/1,forget-014,lost,189, 189, 232
+replication,npo-040,old,unrelated,4,1,forget_direct,direct/forget-003/0,forget-003,lost,246, 246, 238
+replication,npo-040,old,unrelated,4,1,forget_direct,direct/forget-014/0,forget-014,lost,189, 189, 228
+replication,npo-040,old,unrelated,4,1,forget_paraphrase,test/forget-003/0,forget-003,lost,246, 246, 238
+replication,npo-040,old,unrelated,4,1,forget_paraphrase,test/forget-003/1,forget-003,lost,246, 246, 238
+replication,npo-040,old,unrelated,4,1,forget_paraphrase,test/forget-012/0,forget-012,lost,407, 407, 284
+replication,npo-040,old,unrelated,4,1,forget_paraphrase,test/forget-012/1,forget-012,lost,407, 407, Y
+replication,npo-040,old,unrelated,4,1,forget_paraphrase,test/forget-014/0,forget-014,lost,189, 189, 284
+replication,npo-040,old,unrelated,4,1,forget_paraphrase,test/forget-014/1,forget-014,lost,189, 189, 284
+replication,npo-040,old,unrelated,8,1,forget_direct,direct/forget-003/0,forget-003,lost,246, 246, 238
+replication,npo-040,old,unrelated,8,1,forget_direct,direct/forget-014/0,forget-014,lost,189, 189, 232
+replication,npo-040,old,unrelated,8,1,forget_paraphrase,test/forget-003/0,forget-003,lost,246, 246, 238
+replication,npo-040,old,unrelated,8,1,forget_paraphrase,test/forget-003/1,forget-003,lost,246, 246, 238
+replication,npo-040,old,unrelated,8,1,forget_paraphrase,test/forget-012/0,forget-012,lost,407, 407, 284
+replication,npo-040,old,unrelated,8,1,forget_paraphrase,test/forget-012/1,forget-012,lost,407, 407, Y
+replication,npo-040,old,unrelated,8,1,forget_paraphrase,test/forget-014/0,forget-014,lost,189, 189, 284
+replication,npo-040,old,unrelated,8,1,forget_paraphrase,test/forget-014/1,forget-014,lost,189, 189, 284
+replication,npo-040,replacement,exposed,16,1,forget_direct,direct/forget-014/0,forget-014,lost,189, 189, X
+replication,npo-040,replacement,exposed,16,1,forget_direct,direct/forget-015/0,forget-015,new,106,, 106
+replication,npo-040,replacement,exposed,16,1,forget_paraphrase,test/forget-003/1,forget-003,lost,246, 246, Vlc=#
+replication,npo-040,replacement,exposed,16,1,forget_paraphrase,test/forget-012/0,forget-012,lost,407, 407, Y
+replication,npo-040,replacement,exposed,16,1,forget_paraphrase,test/forget-012/1,forget-012,lost,407, 407, V
+replication,npo-040,replacement,exposed,16,1,forget_paraphrase,test/forget-014/0,forget-014,lost,189, 189, X.
+replication,npo-040,replacement,exposed,16,1,forget_paraphrase,test/forget-014/1,forget-014,lost,189, 189, 231
+replication,npo-040,replacement,exposed,4,1,forget_direct,direct/forget-014/0,forget-014,lost,189, 189, X
+replication,npo-040,replacement,exposed,4,1,forget_direct,direct/forget-015/0,forget-015,new,106,, 106
+replication,npo-040,replacement,exposed,4,1,forget_paraphrase,test/forget-003/1,forget-003,lost,246, 246, V
+replication,npo-040,replacement,exposed,4,1,forget_paraphrase,test/forget-010/0,forget-010,new,211, 221, 211
+replication,npo-040,replacement,exposed,4,1,forget_paraphrase,test/forget-012/0,forget-012,lost,407, 407, V
+replication,npo-040,replacement,exposed,4,1,forget_paraphrase,test/forget-012/1,forget-012,lost,407, 407, Y
+replication,npo-040,replacement,exposed,4,1,forget_paraphrase,test/forget-014/0,forget-014,lost,189, 189, 231
+replication,npo-040,replacement,exposed,4,1,forget_paraphrase,test/forget-014/1,forget-014,lost,189, 189, 234
+replication,npo-040,replacement,exposed,8,1,forget_direct,direct/forget-014/0,forget-014,lost,189, 189, X
+replication,npo-040,replacement,exposed,8,1,forget_direct,direct/forget-015/0,forget-015,new,106,, 106
+replication,npo-040,replacement,exposed,8,1,forget_paraphrase,test/forget-003/1,forget-003,lost,246, 246, V
+replication,npo-040,replacement,exposed,8,1,forget_paraphrase,test/forget-010/0,forget-010,new,211, 221, 211
+replication,npo-040,replacement,exposed,8,1,forget_paraphrase,test/forget-010/1,forget-010,new,211, 221, 211
+replication,npo-040,replacement,exposed,8,1,forget_paraphrase,test/forget-012/0,forget-012,lost,407, 407, V
+replication,npo-040,replacement,exposed,8,1,forget_paraphrase,test/forget-012/1,forget-012,lost,407, 407, V
+replication,npo-040,replacement,exposed,8,1,forget_paraphrase,test/forget-014/0,forget-014,lost,189, 189, X.
+replication,npo-040,replacement,exposed,8,1,forget_paraphrase,test/forget-015/0,forget-015,new,106,, 106
+replication,npo-040,replacement,related,16,1,forget_direct,direct/forget-014/0,forget-014,lost,189, 189, X
+replication,npo-040,replacement,related,16,1,forget_direct,direct/forget-015/0,forget-015,new,106,, 106
+replication,npo-040,replacement,related,16,1,forget_paraphrase,test/forget-003/1,forget-003,lost,246, 246, Vlc=#
+replication,npo-040,replacement,related,16,1,forget_paraphrase,test/forget-012/0,forget-012,lost,407, 407, Y
+replication,npo-040,replacement,related,16,1,forget_paraphrase,test/forget-012/1,forget-012,lost,407, 407, V
+replication,npo-040,replacement,related,16,1,forget_paraphrase,test/forget-014/0,forget-014,lost,189, 189, X.
+replication,npo-040,replacement,related,16,1,forget_paraphrase,test/forget-014/1,forget-014,lost,189, 189, 231
+replication,npo-040,replacement,related,4,1,forget_direct,direct/forget-014/0,forget-014,lost,189, 189, X
+replication,npo-040,replacement,related,4,1,forget_direct,direct/forget-015/0,forget-015,new,106,, 106
+replication,npo-040,replacement,related,4,1,forget_paraphrase,test/forget-003/1,forget-003,lost,246, 246, V
+replication,npo-040,replacement,related,4,1,forget_paraphrase,test/forget-010/0,forget-010,new,211, 221, 211
+replication,npo-040,replacement,related,4,1,forget_paraphrase,test/forget-012/0,forget-012,lost,407, 407, V
+replication,npo-040,replacement,related,4,1,forget_paraphrase,test/forget-012/1,forget-012,lost,407, 407, Y
+replication,npo-040,replacement,related,4,1,forget_paraphrase,test/forget-014/0,forget-014,lost,189, 189, 231
+replication,npo-040,replacement,related,4,1,forget_paraphrase,test/forget-014/1,forget-014,lost,189, 189, 234
+replication,npo-040,replacement,related,8,1,forget_direct,direct/forget-014/0,forget-014,lost,189, 189, X
+replication,npo-040,replacement,related,8,1,forget_direct,direct/forget-015/0,forget-015,new,106,, 106
+replication,npo-040,replacement,related,8,1,forget_paraphrase,test/forget-003/1,forget-003,lost,246, 246, V
+replication,npo-040,replacement,related,8,1,forget_paraphrase,test/forget-010/0,forget-010,new,211, 221, 211
+replication,npo-040,replacement,related,8,1,forget_paraphrase,test/forget-010/1,forget-010,new,211, 221, 211
+replication,npo-040,replacement,related,8,1,forget_paraphrase,test/forget-012/0,forget-012,lost,407, 407, V
+replication,npo-040,replacement,related,8,1,forget_paraphrase,test/forget-012/1,forget-012,lost,407, 407, V
+replication,npo-040,replacement,related,8,1,forget_paraphrase,test/forget-014/0,forget-014,lost,189, 189, X.
+replication,npo-040,replacement,related,8,1,forget_paraphrase,test/forget-015/0,forget-015,new,106,, 106
+replication,npo-040,replacement,unrelated,16,1,forget_direct,direct/forget-014/0,forget-014,lost,189, 189, 970
+replication,npo-040,replacement,unrelated,16,1,forget_direct,direct/forget-015/0,forget-015,new,106,, 106
+replication,npo-040,replacement,unrelated,16,1,forget_paraphrase,test/forget-003/1,forget-003,lost,246, 246, V
+replication,npo-040,replacement,unrelated,16,1,forget_paraphrase,test/forget-005/0,forget-005,new,308, 228, 308
+replication,npo-040,replacement,unrelated,16,1,forget_paraphrase,test/forget-010/0,forget-010,new,211, 221, 211
+replication,npo-040,replacement,unrelated,16,1,forget_paraphrase,test/forget-010/1,forget-010,new,211, 221, 211
+replication,npo-040,replacement,unrelated,16,1,forget_paraphrase,test/forget-012/1,forget-012,lost,407, 407, 408
+replication,npo-040,replacement,unrelated,16,1,forget_paraphrase,test/forget-014/0,forget-014,lost,189, 189, 970
+replication,npo-040,replacement,unrelated,16,1,forget_paraphrase,test/forget-014/1,forget-014,lost,189, 189,
+replication,npo-040,replacement,unrelated,16,1,forget_paraphrase,test/forget-015/0,forget-015,new,106,, 106
+replication,npo-040,replacement,unrelated,4,1,forget_direct,direct/forget-010/0,forget-010,new,211, 221, 211
+replication,npo-040,replacement,unrelated,4,1,forget_direct,direct/forget-012/0,forget-012,new,407, 221, 407
+replication,npo-040,replacement,unrelated,4,1,forget_direct,direct/forget-014/0,forget-014,lost,189, 189,
+replication,npo-040,replacement,unrelated,4,1,forget_direct,direct/forget-015/0,forget-015,new,106,, 106
+replication,npo-040,replacement,unrelated,4,1,forget_paraphrase,test/forget-003/1,forget-003,lost,246, 246, V
+replication,npo-040,replacement,unrelated,4,1,forget_paraphrase,test/forget-010/0,forget-010,new,211, 221, 211
+replication,npo-040,replacement,unrelated,4,1,forget_paraphrase,test/forget-012/1,forget-012,lost,407, 407, V
+replication,npo-040,replacement,unrelated,4,1,forget_paraphrase,test/forget-014/0,forget-014,lost,189, 189,
+replication,npo-040,replacement,unrelated,4,1,forget_paraphrase,test/forget-014/1,forget-014,lost,189, 189, 228
+replication,npo-040,replacement,unrelated,4,1,forget_paraphrase,test/forget-015/0,forget-015,new,106,, 106
+replication,npo-040,replacement,unrelated,4,1,forget_paraphrase,test/forget-015/1,forget-015,new,106,, 106
+replication,npo-040,replacement,unrelated,8,1,forget_direct,direct/forget-002/0,forget-002,new,444, 284, 444
+replication,npo-040,replacement,unrelated,8,1,forget_direct,direct/forget-010/0,forget-010,new,211, 221, 211
+replication,npo-040,replacement,unrelated,8,1,forget_direct,direct/forget-014/0,forget-014,lost,189, 189,
+replication,npo-040,replacement,unrelated,8,1,forget_direct,direct/forget-015/0,forget-015,new,106,, 106
+replication,npo-040,replacement,unrelated,8,1,forget_paraphrase,test/forget-002/0,forget-002,new,444, 284, 444
+replication,npo-040,replacement,unrelated,8,1,forget_paraphrase,test/forget-002/1,forget-002,new,444, 284, 444
+replication,npo-040,replacement,unrelated,8,1,forget_paraphrase,test/forget-003/1,forget-003,lost,246, 246, V
+replication,npo-040,replacement,unrelated,8,1,forget_paraphrase,test/forget-010/0,forget-010,new,211, 221, 211
+replication,npo-040,replacement,unrelated,8,1,forget_paraphrase,test/forget-010/1,forget-010,new,211, 221, 211
+replication,npo-040,replacement,unrelated,8,1,forget_paraphrase,test/forget-012/0,forget-012,lost,407, 407,
+replication,npo-040,replacement,unrelated,8,1,forget_paraphrase,test/forget-012/1,forget-012,lost,407, 407, V
+replication,npo-040,replacement,unrelated,8,1,forget_paraphrase,test/forget-014/0,forget-014,lost,189, 189,
+replication,npo-040,replacement,unrelated,8,1,forget_paraphrase,test/forget-014/1,forget-014,lost,189, 189,

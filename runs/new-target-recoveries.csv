@@ -1,0 +1,80 @@
+run,base,role,group,rank,split,id,record,correct_answer,bare_prediction,attached_prediction
+pilot,npo-032,replacement,exposed,8,forget_direct,direct/forget-001/0,forget-001,244,��, 244
+pilot,npo-032,replacement,exposed,8,forget_direct,direct/forget-006/0,forget-006,314,��, 314
+pilot,npo-032,replacement,exposed,8,forget_paraphrase,test/forget-006/0,forget-006,314,��, 314
+pilot,npo-032,replacement,related,8,forget_direct,direct/forget-001/0,forget-001,244,��, 244
+pilot,npo-032,replacement,related,8,forget_direct,direct/forget-006/0,forget-006,314,��, 314
+pilot,npo-032,replacement,related,8,forget_paraphrase,test/forget-006/0,forget-006,314,��, 314
+pilot,npo-032,replacement,unrelated,8,forget_direct,direct/forget-001/0,forget-001,244,��, 244
+pilot,npo-032,replacement,unrelated,8,forget_direct,direct/forget-011/0,forget-011,291,��, 291
+pilot,npo-032,replacement,unrelated,8,forget_direct,direct/forget-014/0,forget-014,341,��, 341
+pilot,npo-032,replacement,unrelated,8,forget_paraphrase,test/forget-001/0,forget-001,244,��, 244
+pilot,npo-032,replacement,unrelated,8,forget_paraphrase,test/forget-008/1,forget-008,620,, 620
+pilot,npo-032,replacement,unrelated,8,forget_paraphrase,test/forget-010/1,forget-010,660,��, 660
+pilot,npo-032,replacement,unrelated,8,forget_paraphrase,test/forget-012/0,forget-012,305,��, 305
+graddiff-dense,graddiff-020,clean,exposed,8,forget_direct,direct/forget-002/0,forget-002,328,, 328
+graddiff-dense,graddiff-020,clean,exposed,8,forget_paraphrase,test/forget-002/1,forget-002,328,, 328
+graddiff-dense,graddiff-020,clean,exposed,8,forget_paraphrase,test/forget-012/1,forget-012,305,"
+
+", 305
+graddiff-dense,graddiff-020,clean,related,8,forget_direct,direct/forget-002/0,forget-002,328,, 328
+graddiff-dense,graddiff-020,clean,related,8,forget_paraphrase,test/forget-002/1,forget-002,328,, 328
+graddiff-dense,graddiff-020,clean,related,8,forget_paraphrase,test/forget-012/1,forget-012,305,"
+
+", 305
+graddiff-dense,graddiff-020,clean,unrelated,8,forget_direct,direct/forget-002/0,forget-002,328,, 328
+graddiff-dense,graddiff-020,clean,unrelated,8,forget_paraphrase,test/forget-005/1,forget-005,370,, 370
+graddiff-dense,graddiff-020,clean,unrelated,8,forget_paraphrase,test/forget-012/1,forget-012,305,"
+
+", 305
+graddiff-dense,graddiff-020,old,exposed,8,forget_direct,direct/forget-002/0,forget-002,328,, 328
+graddiff-dense,graddiff-020,old,exposed,8,forget_paraphrase,test/forget-002/1,forget-002,328,, 328
+graddiff-dense,graddiff-020,replacement,exposed,8,forget_direct,direct/forget-002/0,forget-002,328,, 328
+graddiff-dense,graddiff-020,replacement,exposed,8,forget_direct,direct/forget-005/0,forget-005,370,, 370
+graddiff-dense,graddiff-020,replacement,exposed,8,forget_direct,direct/forget-010/0,forget-010,660, people, 660
+graddiff-dense,graddiff-020,replacement,exposed,8,forget_paraphrase,test/forget-002/1,forget-002,328,, 328
+graddiff-dense,graddiff-020,replacement,exposed,8,forget_paraphrase,test/forget-005/1,forget-005,370,, 370
+graddiff-dense,graddiff-020,replacement,exposed,8,forget_paraphrase,test/forget-011/1,forget-011,291,��, 291
+graddiff-dense,graddiff-020,replacement,exposed,8,forget_paraphrase,test/forget-012/1,forget-012,305,"
+
+", 305
+graddiff-dense,graddiff-020,replacement,related,8,forget_direct,direct/forget-002/0,forget-002,328,, 328
+graddiff-dense,graddiff-020,replacement,related,8,forget_direct,direct/forget-005/0,forget-005,370,, 370
+graddiff-dense,graddiff-020,replacement,related,8,forget_direct,direct/forget-010/0,forget-010,660, people, 660
+graddiff-dense,graddiff-020,replacement,related,8,forget_paraphrase,test/forget-002/1,forget-002,328,, 328
+graddiff-dense,graddiff-020,replacement,related,8,forget_paraphrase,test/forget-005/1,forget-005,370,, 370
+graddiff-dense,graddiff-020,replacement,related,8,forget_paraphrase,test/forget-011/1,forget-011,291,��, 291
+graddiff-dense,graddiff-020,replacement,related,8,forget_paraphrase,test/forget-012/1,forget-012,305,"
+
+", 305
+graddiff-dense,graddiff-020,replacement,unrelated,8,forget_direct,direct/forget-002/0,forget-002,328,, 328
+graddiff-dense,graddiff-020,replacement,unrelated,8,forget_direct,direct/forget-010/0,forget-010,660, people, 660
+graddiff-dense,graddiff-020,replacement,unrelated,8,forget_direct,direct/forget-011/0,forget-011,291,��, 291
+graddiff-dense,graddiff-020,replacement,unrelated,8,forget_direct,direct/forget-015/0,forget-015,352,".
+", 352
+graddiff-dense,graddiff-020,replacement,unrelated,8,forget_paraphrase,test/forget-005/1,forget-005,370,, 370
+graddiff-dense,graddiff-020,replacement,unrelated,8,forget_paraphrase,test/forget-009/1,forget-009,457,"
+", 457
+graddiff-dense,graddiff-020,replacement,unrelated,8,forget_paraphrase,test/forget-010/0,forget-010,660,F, 660
+graddiff-dense,graddiff-020,replacement,unrelated,8,forget_paraphrase,test/forget-012/1,forget-012,305,"
+
+", 305
+graddiff-matched,graddiff-056,replacement,exposed,8,forget_direct,direct/forget-003/0,forget-003,121, where I, 121
+graddiff-matched,graddiff-056,replacement,exposed,8,forget_direct,direct/forget-014/0,forget-014,341, d d d l d d d a, 341
+graddiff-matched,graddiff-056,replacement,exposed,8,forget_direct,direct/forget-015/0,forget-015,352,", non.", 352
+graddiff-matched,graddiff-056,replacement,related,8,forget_direct,direct/forget-003/0,forget-003,121, where I, 121
+graddiff-matched,graddiff-056,replacement,related,8,forget_direct,direct/forget-014/0,forget-014,341, d d d l d d d a, 341
+graddiff-matched,graddiff-056,replacement,related,8,forget_direct,direct/forget-015/0,forget-015,352,", non.", 352
+graddiff-matched,graddiff-056,replacement,unrelated,8,forget_direct,direct/forget-005/0,forget-005,370,, 370
+graddiff-matched,graddiff-056,replacement,unrelated,8,forget_paraphrase,test/forget-003/1,forget-003,121, where, 121
+graddiff-matched,graddiff-056,replacement,unrelated,8,forget_paraphrase,test/forget-005/0,forget-005,370,, 370
+graddiff-matched,graddiff-056,replacement,unrelated,8,forget_paraphrase,test/forget-005/1,forget-005,370,, 370
+graddiff-matched,graddiff-056,replacement,unrelated,8,forget_paraphrase,test/forget-006/1,forget-006,314,��, 314
+graddiff-matched,graddiff-056,replacement,unrelated,8,forget_paraphrase,test/forget-008/1,forget-008,620,, 620
+graddiff-matched,graddiff-056,replacement,unrelated,8,forget_paraphrase,test/forget-012/0,forget-012,305,"
+
+
+
+
+
+", 305
