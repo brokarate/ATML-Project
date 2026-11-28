@@ -1,0 +1,70 @@
+{
+  "model": "Qwen/Qwen2.5-3B",
+  "revision": "3aab1f1954e9cc14eb9509a215f9e5ca08227a9b",
+  "data": "tofu",
+  "seed": 31415,
+  "quantize": true,
+  "adapter_lr": 0.0005,
+  "adapter_steps": 90,
+  "batch": 8,
+  "beta": 0.1,
+  "edit_lr": 0.0001,
+  "edit_rank": 32,
+  "edit_steps": [
+    4,
+    8,
+    12,
+    16,
+    24,
+    32,
+    48,
+    64,
+    96,
+    128
+  ],
+  "eval_batch": 16,
+  "eval_limit": null,
+  "exposed_count": 100,
+  "general_validation_n": 64,
+  "gradient_checkpointing": false,
+  "know_lr": 0.0002,
+  "know_rank": 32,
+  "know_steps": 450,
+  "max_clean_forget": 0.2,
+  "max_general_drop": 0.15,
+  "max_new_tokens": 64,
+  "max_retain_drop": 0.2,
+  "methods": [
+    "graddiff",
+    "npo"
+  ],
+  "min_edit_forgetting": 0.5,
+  "min_full_forget": 0.6,
+  "ranks": [
+    8
+  ],
+  "retain_weight": 1.0,
+  "roles": [
+    "old",
+    "clean",
+    "replacement"
+  ],
+  "rouge_threshold": 0.6,
+  "sample_count": 5,
+  "sample_limit": 50,
+  "sample_temperature": 1.0,
+  "sample_top_p": 1.0,
+  "scales": [
+    0.25
+  ],
+  "task_targets": [
+    "q_proj",
+    "v_proj"
+  ],
+  "task_test": 60,
+  "task_train": 300,
+  "tofu_forget": "forget05",
+  "tofu_retain_authors": 20,
+  "utility_n": 200,
+  "validation_limit": 64
+}

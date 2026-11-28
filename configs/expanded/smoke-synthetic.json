@@ -1,0 +1,60 @@
+{
+  "model": "HuggingFaceTB/SmolLM2-135M",
+  "revision": "93efa2f097d58c2a74874c7e644dbc9b0cee75a2",
+  "data": "synthetic",
+  "seed": 1,
+  "quantize": false,
+  "adapter_lr": 0.0005,
+  "adapter_steps": 2,
+  "batch": 8,
+  "beta": 0.1,
+  "edit_lr": 0.001,
+  "edit_rank": 32,
+  "edit_steps": [
+    1,
+    2
+  ],
+  "eval_batch": 16,
+  "forget": 4,
+  "general_validation_n": 4,
+  "gradient_checkpointing": false,
+  "know_lr": 0.002,
+  "know_rank": 32,
+  "know_steps": 4,
+  "max_clean_forget": 1.0,
+  "max_general_drop": 1.0,
+  "max_new_tokens": 8,
+  "max_retain_drop": 1.0,
+  "methods": [
+    "graddiff",
+    "npo"
+  ],
+  "min_edit_forgetting": 0.0,
+  "min_full_forget": 0.0,
+  "ranks": [
+    4
+  ],
+  "retain": 8,
+  "retain_weight": 1.0,
+  "roles": [
+    "old",
+    "clean",
+    "replacement"
+  ],
+  "rouge_threshold": 0.6,
+  "sample_count": 2,
+  "sample_limit": null,
+  "sample_temperature": 1.0,
+  "sample_top_p": 1.0,
+  "scales": [
+    0.5
+  ],
+  "single_token_codes": false,
+  "task_targets": [
+    "q_proj",
+    "v_proj"
+  ],
+  "task_test": 4,
+  "task_train": 8,
+  "utility_n": 4
+}

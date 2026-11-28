@@ -1,0 +1,72 @@
+{
+  "model": "Qwen/Qwen2.5-7B",
+  "revision": "d149729398750b98c0af14eb82c78cfe92750796",
+  "data": "synthetic",
+  "seed": 31415,
+  "quantize": true,
+  "adapter_lr": 0.0005,
+  "adapter_steps": 90,
+  "batch": 8,
+  "beta": 0.1,
+  "edit_lr": 0.0001,
+  "edit_rank": 32,
+  "edit_steps": [
+    4,
+    8,
+    12,
+    16,
+    20,
+    24,
+    32,
+    40,
+    48,
+    64,
+    80,
+    96,
+    128
+  ],
+  "eval_batch": 8,
+  "forget": 16,
+  "general_validation_n": 64,
+  "gradient_checkpointing": false,
+  "know_lr": 0.0003,
+  "know_rank": 32,
+  "know_steps": 300,
+  "max_clean_forget": 0.125,
+  "max_general_drop": 0.15,
+  "max_new_tokens": 8,
+  "max_retain_drop": 0.2,
+  "methods": [
+    "graddiff",
+    "npo"
+  ],
+  "min_edit_forgetting": 0.5,
+  "min_full_forget": 0.75,
+  "ranks": [
+    8
+  ],
+  "retain": 48,
+  "retain_weight": 1.0,
+  "roles": [
+    "old",
+    "clean",
+    "replacement"
+  ],
+  "rouge_threshold": 0.6,
+  "sample_count": 5,
+  "sample_limit": null,
+  "sample_temperature": 1.0,
+  "sample_top_p": 1.0,
+  "scales": [
+    0.25,
+    0.5
+  ],
+  "single_token_codes": false,
+  "task_targets": [
+    "q_proj",
+    "v_proj"
+  ],
+  "task_test": 24,
+  "task_train": 48,
+  "utility_n": 200
+}

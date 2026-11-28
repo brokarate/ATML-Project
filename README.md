@@ -120,3 +120,53 @@ Across both seeds the project evaluated 128 distinct conditions and verified the
 - [Replication condition metrics](runs/replication/summary.csv)
 - [Paired recovery changes across both seeds](runs/paired-target-recovery.csv)
 - [Replication ARC-Easy diagnostic](runs/replication/arc_easy/summary.json)
+
+## Expanded study (quantized backbones, TOFU)
+
+`expanded.py` scales the pilot to Qwen2.5 3B/7B and SmolLM2 1.7B on 4-bit NF4 backbones. The backbone weights never change. Every base update is its own named LoRA adapter on one shared backbone, and an evaluation activates a stack of adapters whose low-rank updates add together:
+
+| Base | Active adapters |
+| --- | --- |
+| starting | none |
+| full | `know-full` (forget + retain records) |
+| clean | `know-clean` (retain records only) |
+| edited | `know-full` + `edit-<method>-<step>` (GradDiff or NPO, trained with the task adapter detached) |
+
+Stale task adapters (`old-*`) are trained on `full` and reloaded from disk for every condition. `aggregate` checks that each adapter's SHA-256 is the same in every condition that uses it. The backbone loads once per job, so swapping conditions only changes which adapters are active.
+
+Data sources (`suites.py`):
+
+- **synthetic**: the pilot's fictional author codes (`records.py`), using all three-digit codes because Qwen and SmolLM2 split digits.
+- **tofu**: TOFU `forget05` (10 authors, 200 QA) as targets and the `retain_perturbed` authors (20 authors, 400 QA) as retained records. Task adapters learn record-grounded QA on other TOFU authors. The exposed group swaps 100 of its 300 examples for target-author QA, and `exposure_audit` lists which ones. Generations count as recovered when ROUGE-L recall reaches `rouge_threshold`.
+
+Test probes for every condition:
+
+- direct wording (shared with training) and paraphrases (TOFU's official `paraphrased_question` for the tofu source)
+- alternate prompt formats (`chat`; `instruct` for synthetic, while TOFU uses `instruct` for validation)
+- forced choice: the true code against three other codes for synthetic, or TOFU's paraphrased answer against its five perturbed answers (with the TOFU truth ratio)
+- `sample_count` sampled generations per target prompt (a target counts as recovered if any sample contains it)
+- ARC-Easy and HellaSwag utility samples
+
+Edit selection uses validation wording and an ARC-Easy validation sample. `target-changes.csv` lists each target prompt that was recovered or lost relative to the same bare edited base.
+
+```sh
+# local CPU smoke test with SmolLM2-135M (thresholds disabled; checks plumbing only)
+.venv/Scripts/python -u expanded.py all --config configs/expanded/smoke-tofu.json --run runs/smoke-tofu --device cpu
+
+# Kaggle: build and push one private GPU job per config
+python prepare_kaggle_expanded.py YOUR_KAGGLE_USERNAME configs/expanded/qwen3b-synthetic.json
+kaggle kernels push -p .kaggle-build/atml-stale-lora-qwen3b-synthetic
+kaggle kernels status YOUR_KAGGLE_USERNAME/atml-stale-lora-qwen3b-synthetic
+kaggle kernels output YOUR_KAGGLE_USERNAME/atml-stale-lora-qwen3b-synthetic -p runs/kaggle/qwen3b-synthetic
+```
+
+If a job reaches Kaggle's 12-hour limit, rebuild with `--resume` and push again. The new version attaches the previous output and skips finished stages and conditions.
+
+| Config | Backbone | Data | Ranks |
+| --- | --- | --- | --- |
+| `qwen3b-synthetic` | Qwen2.5-3B | synthetic, seed 31415 | 4, 8, 16 |
+| `qwen3b-synthetic-seed2` | Qwen2.5-3B | synthetic, seed 27182 | 4, 8, 16 |
+| `qwen7b-synthetic` | Qwen2.5-7B | synthetic, seed 31415 | 8 |
+| `qwen3b-tofu` | Qwen2.5-3B | TOFU forget05 | 8 |
+| `qwen7b-tofu` | Qwen2.5-7B | TOFU forget05, 100 eval QA per split, no clean-adapter role | 8 |
+| `smollm2-tofu` | SmolLM2-1.7B | TOFU forget05 | 8 |

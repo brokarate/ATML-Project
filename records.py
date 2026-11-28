@@ -64,8 +64,11 @@ def arithmetic(rng):
 
 def build(config, tokenizer):
     rng = random.Random(config["seed"])
+    # GPT-Neo has single-token three-digit numbers. Tokenizers that split digits
+    # (Qwen, SmolLM2) set single_token_codes to false and use every code.
     codes = [str(value) for value in range(100, 1000)
-             if len(tokenizer.encode(f" {value}", add_special_tokens=False)) == 1]
+             if not config.get("single_token_codes", True)
+             or len(tokenizer.encode(f" {value}", add_special_tokens=False)) == 1]
     count = config["forget"] + config["retain"] + 2 * (
         config["task_train"] + config["task_test"]
     )
