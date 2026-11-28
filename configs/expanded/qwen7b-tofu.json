@@ -50,7 +50,7 @@
   ],
   "rouge_threshold": 0.6,
   "sample_count": 5,
-  "sample_limit": 50,
+  "sample_limit": 30,
   "sample_temperature": 1.0,
   "sample_top_p": 1.0,
   "scales": [
@@ -65,5 +65,13 @@
   "tofu_forget": "forget05",
   "tofu_retain_authors": 20,
   "utility_n": 150,
-  "validation_limit": 64
+  "validation_limit": 64,
+  "time_budget_hours": 11,
+  "utility_roles": [
+    "base",
+    "old"
+  ],
+  "scale_ranks": [
+    8
+  ]
 }

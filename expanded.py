@@ -16,6 +16,7 @@ import json
 import os
 import platform
 import tempfile
+import time
 from pathlib import Path
 
 import torch
@@ -28,6 +29,21 @@ from suites import build_suite
 
 
 SOURCES = ("expanded.py", "stack.py", "suites.py", "records.py")
+# Config keys that only select which conditions run or when to stop.
+EVALUATION_ONLY = ("roles", "scales", "scale_ranks", "utility_roles", "time_budget_hours")
+STARTED = time.monotonic()
+
+
+class OutOfTime(Exception):
+    pass
+
+
+def training_inputs(config):
+    return {k: v for k, v in config.items() if k not in EVALUATION_ONLY}
+
+
+def normalized(value):
+    return json.loads(json.dumps(value))
 
 
 def write_json(path, value):
@@ -56,12 +72,24 @@ class Study:
         self.data = build_suite(config, tokenizer)
         self.pairing = self.data["pairing"]
         here = Path(__file__).resolve().parent
-        contract = {"config": config, "data": self.data,
-                    "code": {name: digest(here / name) for name in SOURCES}}
+        code = {name: digest(here / name) for name in SOURCES}
+        contract = {"config": config, "data": self.data, "code": code}
         manifest = root / "manifest.json"
-        if manifest.exists() and read_json(manifest)["contract"] != contract:
-            raise SystemExit("This run uses different inputs or code. Choose a new run directory.")
-        if not manifest.exists():
+        if manifest.exists():
+            # A resumed run must train and test on identical inputs. Keys that only
+            # choose which conditions to evaluate, and code revisions, may change;
+            # each revision is recorded so results stay traceable.
+            saved = read_json(manifest)
+            same_config = (training_inputs(normalized(config))
+                           == training_inputs(saved["contract"]["config"]))
+            if not (same_config and normalized(self.data) == saved["contract"]["data"]):
+                raise SystemExit("This run uses different inputs. Choose a new run directory.")
+            revisions = saved.setdefault("resumed_with", [])
+            if code != saved["contract"]["code"] and code not in [r["code"] for r in revisions]:
+                print("Resuming with revised code; recording it in manifest.json", flush=True)
+                revisions.append({"code": code, "config": config})
+                write_json(manifest, saved)
+        else:
             write_json(manifest, {
                 "contract": contract, "platform": platform.platform(), "device": str(device),
                 "accelerator": (torch.cuda.get_device_name(device) if device.type == "cuda"
@@ -104,10 +132,17 @@ class Study:
                 self.stack.load(name, self.adapters / name)
         self.stack.activate(names, trainable=trainable, scale=scale)
 
+    def budget(self, label, minutes):
+        """Stop cleanly before Kaggle's 12-hour limit so the output is saved."""
+        hours = self.config.get("time_budget_hours")
+        if hours and time.monotonic() - STARTED > hours * 3600 - minutes * 60:
+            raise OutOfTime(label)
+
     def fit(self, name, below, rows, *, rank, targets, steps, lr, seed, metadata):
         path = self.adapters / name
         if path.exists():
             return path
+        self.budget(f"training {name}", 10)
         print(f"Training {name} on [{', '.join(below) or 'backbone'}]", flush=True)
         set_seed(seed)
         for other in below:
@@ -172,6 +207,7 @@ class Study:
             selection_path = self.root / f"selection-{method}.json"
             if selection_path.exists():
                 continue
+            self.budget(f"editing with {method}", 75)
             print(f"Editing full with {method}", flush=True)
             set_seed(cfg["seed"] + 20)
             reference = None
@@ -229,27 +265,35 @@ class Study:
         edits = [base for base in bases if base not in ("starting", "full", "clean")]
         if not edits:
             raise SystemExit("No edit met the validation criteria. Final comparison was skipped.")
+        roles = set(cfg["roles"])
+        pairs = [(rank, group) for rank in cfg["ranks"] for group in GROUPS]
+        # Most important conditions first, so a run cut short by the time budget
+        # still answers the main question: bare bases, then stale adapters.
         for base in bases:
             self.condition(base, bases[base], "base", "none", 0)
-        roles = set(cfg["roles"])
-        for rank in cfg["ranks"]:
-            for group in GROUPS:
-                old, clean = f"old-{group}-r{rank}", f"clean-{group}-r{rank}"
-                for base in ["full", "clean", *edits]:
-                    self.condition(base, bases[base], "old", group, rank, old)
-                if "clean" in roles:
-                    for base in ["clean", *edits]:
-                        self.condition(base, bases[base], "clean", group, rank, clean)
+        for rank, group in pairs:
+            for base in ["full", "clean", *edits]:
+                self.condition(base, bases[base], "old", group, rank, f"old-{group}-r{rank}")
+        if "replacement" in roles:
+            for rank, group in pairs:
                 for base in edits:
-                    for scale in cfg.get("scales", []):
-                        self.condition(base, bases[base], f"scaled-{scale}", group, rank, old, scale)
-                    if "replacement" in roles:
-                        name = f"replacement-{base}-{group}-r{rank}"
-                        self.fit(name, bases[base], self.data["train"]["tasks"][group], rank=rank,
-                                 targets=cfg["task_targets"], steps=cfg["adapter_steps"],
-                                 lr=cfg["adapter_lr"], seed=cfg["seed"] + 10,
-                                 metadata={"role": "replacement", "group": group, "data": "tasks"})
-                        self.condition(base, bases[base], "replacement", group, rank, name)
+                    name = f"replacement-{base}-{group}-r{rank}"
+                    self.fit(name, bases[base], self.data["train"]["tasks"][group], rank=rank,
+                             targets=cfg["task_targets"], steps=cfg["adapter_steps"],
+                             lr=cfg["adapter_lr"], seed=cfg["seed"] + 10,
+                             metadata={"role": "replacement", "group": group, "data": "tasks"})
+                    self.condition(base, bases[base], "replacement", group, rank, name)
+        if "clean" in roles:
+            for rank, group in pairs:
+                for base in ["clean", *edits]:
+                    self.condition(base, bases[base], "clean", group, rank, f"clean-{group}-r{rank}")
+        for rank, group in pairs:
+            if rank not in cfg.get("scale_ranks", cfg["ranks"]):
+                continue
+            for base in edits:
+                for scale in cfg.get("scales", []):
+                    self.condition(base, bases[base], f"scaled-{scale}", group, rank,
+                                   f"old-{group}-r{rank}", scale)
 
     def condition(self, base, below, role, group, rank, adapter=None, scale=None):
         name = f"{base}__{role}__{group}__r{rank}"
@@ -257,8 +301,13 @@ class Study:
         metrics_path = directory / f"{name}.json"
         if metrics_path.exists():
             return
+        self.budget(f"evaluating {name}", 15)
         print(f"Evaluating {name}", flush=True)
         splits = dict(self.data["test"])
+        # ARC-Easy and HellaSwag dominate evaluation time, so configs can limit them
+        # to the roles whose general utility matters most.
+        if role not in self.config.get("utility_roles", [role]):
+            splits = {k: v for k, v in splits.items() if not k.startswith("utility_")}
         names, sha = list(below), None
         if adapter:
             sha = digest(self.adapters / adapter / "adapter_model.safetensors")
@@ -366,12 +415,18 @@ def main():
     study = Study(read_json(options.config), options.run, torch.device(device))
     stages = {"knowledge": study.knowledge, "adapters": study.task_adapters,
               "unlearn": study.unlearn, "evaluate": study.evaluation}
-    if options.stage == "all":
-        for stage in stages.values():
-            stage()
-        aggregate(options.run)
-    else:
-        stages[options.stage]()
+    try:
+        if options.stage == "all":
+            for stage in stages.values():
+                stage()
+            aggregate(options.run)
+        else:
+            stages[options.stage]()
+    except OutOfTime as stop:
+        # Exit successfully so Kaggle saves /kaggle/working; a --resume run continues.
+        print(f"Time budget reached before {stop}. Resume this run to continue.", flush=True)
+        if list((options.run / "evaluation").glob("*.json")):
+            aggregate(options.run)
 
 
 if __name__ == "__main__":

@@ -49,7 +49,6 @@
   "retain_weight": 1.0,
   "roles": [
     "old",
-    "clean",
     "replacement"
   ],
   "rouge_threshold": 0.6,
@@ -68,5 +67,13 @@
   ],
   "task_test": 24,
   "task_train": 48,
-  "utility_n": 200
+  "utility_n": 200,
+  "time_budget_hours": 11,
+  "utility_roles": [
+    "base",
+    "old"
+  ],
+  "scale_ranks": [
+    8
+  ]
 }

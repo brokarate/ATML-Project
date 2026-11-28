@@ -58,5 +58,13 @@
   "tofu_forget": "forget05",
   "tofu_retain_authors": 2,
   "utility_n": 4,
-  "validation_limit": 4
+  "validation_limit": 4,
+  "time_budget_hours": null,
+  "utility_roles": [
+    "base",
+    "old"
+  ],
+  "scale_ranks": [
+    4
+  ]
 }

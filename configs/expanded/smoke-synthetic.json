@@ -56,5 +56,13 @@
   ],
   "task_test": 4,
   "task_train": 8,
-  "utility_n": 4
+  "utility_n": 4,
+  "time_budget_hours": null,
+  "utility_roles": [
+    "base",
+    "old"
+  ],
+  "scale_ranks": [
+    4
+  ]
 }
